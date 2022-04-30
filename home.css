@@ -9,7 +9,7 @@ html, body{
   /* for grid 100vh per section*/
   .main{
     display: grid;
-    grid-auto-rows: minmax(100vh, auto);
+    grid-auto-rows: minmax(80vh, auto);
     margin: 0;
     padding: 0;
 
