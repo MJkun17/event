@@ -80,6 +80,39 @@ h1{
   max-width:100%;
 }
 
+.navbar-brand{
+  color: white;
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+
+
+}
+
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  width: 0%;
+  content: "";
+  height: 2px;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 80%;
+  transition: all 0.5s;
+}
+
+.active-hover{
+  border-bottom: 2.5px solid white;
+}
+
+
 
 
 .bg-image{
@@ -117,6 +150,20 @@ footer{
   color: #BCBCBC;
 
 }
+
+.event{
+  color: #454545;
+}
+
+.event:hover{
+  color: white;
+}
+
+.list-group-item a{
+  color: #818181;
+}
+
+
 
 ul li a{
   text-decoration: none;
