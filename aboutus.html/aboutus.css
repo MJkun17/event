@@ -15,6 +15,25 @@ html, body{
 
   }
 
+  
+  .custom-toggler-icon span {
+    display: block;
+    float: right;
+    width: 40px;
+    height: 2px;
+    background: white;
+    margin: 8px 0;
+  }
+  .custom-toggler-icon::after {
+    content: "";
+    float: left;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: white;
+  }
+
+
 
   .section-1 {
     grid-row: 1/2;
@@ -365,3 +384,8 @@ ul li a{
       animation-name: fadeIn;
     }
     
+    @media (max-width: 991.98px) { 
+      .left-toggler{
+        display: none;
+      }
+     }
