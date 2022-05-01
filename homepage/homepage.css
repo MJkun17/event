@@ -14,6 +14,11 @@ html, body{
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
   }
+
+  h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+  }
   
   /* for grid 100vh per section*/
   .main{
@@ -24,6 +29,22 @@ html, body{
 
   }
 
+  .custom-toggler-icon span {
+    display: block;
+    float: right;
+    width: 40px;
+    height: 2px;
+    background: white;
+    margin: 8px 0;
+  }
+  .custom-toggler-icon::after {
+    content: "";
+    float: left;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: white;
+  }
 
   .section-1 {
     grid-row: 1/2;
@@ -104,7 +125,7 @@ html, body{
 .navbar-brand{
   color: white;
   font-family: 'Cormorant Garamond';
-  float: left;
+  font-style: italic;
 
 
 }
@@ -180,6 +201,9 @@ background-image: url('/assets/c1.jpg');
   font-family: 'Montserrat', sans-serif;
 }
 
+.btn:hover {
+  background-color: white;
+}
 
 /*section-2 css*/
 .section-2 h1{
@@ -391,6 +415,9 @@ blockquote::after {
   opacity: 0.8;
 }
 
+.section-9 .container{
+  width: 90%;
+}
 
 /*footer*/
 
@@ -404,4 +431,57 @@ footer{
 
 }
 
+.event{
+  color: #454545;
+}
 
+.event:hover{
+  color: white;
+}
+
+.list-group-item a{
+  color: #818181;
+}
+
+
+
+
+@media (max-width: 575.98px) { 
+
+  .middle-content{
+    font-size: calc(1.525rem + 3.3vw);
+}
+
+
+.section-2 h1{
+  font-size: calc(1.525rem + 3.3vw);
+}
+  .section-4 .row {
+   
+    flex-direction: column-reverse;
+      }
+
+         
+    .middle-content-buttom{
+      font-size: calc(1.525rem + 3.3vw);
+}
+
+.section-8{
+  margin-top: -90%;
+}
+
+      .section-8 .row {
+   
+        flex-direction: column-reverse;
+          }
+    
+
+
+  }
+
+
+  @media (max-width: 991.98px) { 
+    .left-toggler{
+      display: none;
+    }
+   }
