@@ -9,7 +9,7 @@ html, body{
   /* for grid 100vh per section*/
   .main{
     display: grid;
-    grid-auto-rows: minmax(90vh, auto);
+    grid-auto-rows: minmax(auto, 100vh);
     margin: 0;
     padding: 0;
 
@@ -26,7 +26,7 @@ html, body{
 
   .section-2 {
     grid-row: 2/3;
-    overflow: hidden;
+
   }
 
   .section-3 {
@@ -95,15 +95,18 @@ h1{
 
 
 
-  #parallax{
+  .parallax{
     background-image: url(/aboutus.html/about3.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 42%);
-    
-    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
   }
+
+
 
 footer{
   position: relative;
@@ -181,9 +184,10 @@ ul li a{
   
 
   @media (min-width: 992px) {
-    .section-1{
-      height: 100vh;
+    .section-4{
+      height: 90vh;
     }
+
    }
 
    @media (max-width: 576px) { 
@@ -195,19 +199,6 @@ ul li a{
        width: 100%;
      }
 
-     .section-3{
-       height: 50vh;
-     }
-
-     #parallax{
-       margin-top: 10%;
-       height: 50vh;
-     }
-
-     .section-4{
-       margin-top: -10%;
-     }
-
      .team-story{
        width: 100%;
      }
@@ -216,9 +207,18 @@ ul li a{
        text-align: center;
      }
 
+     .wrap-banner h1{
+      font-size: calc(1.525rem + 3.3vw);
+     }
 
-     
+     .section-1{
+       height: 60vh;
+     }
 
+     .parallax{
+      margin-top: 35%;
+      background-position: center;
+     }
 
      
     }
@@ -229,8 +229,11 @@ ul li a{
 
 
 
- 
 
+ 
+.scroll-container{
+  overflow: hidden;
+}
     .scroll-element{
       width: 100%;
      
@@ -292,4 +295,26 @@ ul li a{
     
 
 
- 
+    @media (max-width: 991.98px) { 
+      .section-4
+    {
+      height: 90vh;
+    }
+    }
+
+
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+    }
+    .fadeIn {
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+    }
+    
