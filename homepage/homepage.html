@@ -156,7 +156,7 @@
 
 
     </div>
-<!--end of section-1 -->
+  <!--end of section-1 -->
 
         <div class="section-2">
 
@@ -549,76 +549,5 @@
  
 </body>
 
-<!--back to the top btn-->
-<script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
-    
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
-
-
-
-<!--on scoll slide-in-->
-<script>
-      const scrollElements = document.querySelectorAll(".js-scroll");
-
-const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top;
-
-  return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
-  );
-};
-
-const elementOutofView = (el) => {
-  const elementTop = el.getBoundingClientRect().top;
-
-  return (
-    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-  );
-};
-
-const displayScrollElement = (element) => {
-  element.classList.add("scrolled");
-};
-
-const hideScrollElement = (element) => {
-  element.classList.remove("scrolled");
-};
-
-const handleScrollAnimation = () => {
-  scrollElements.forEach((el) => {
-    if (elementInView(el, 1.25)) {
-      displayScrollElement(el);
-    } else if (elementOutofView(el)) {
-      hideScrollElement(el)
-    }
-  })
-}
-
-window.addEventListener("scroll", () => { 
-  handleScrollAnimation();
-});
-    </script>
-<script>$(".navbar .navbar-nav > ul > li > a").click(function() {        
-  $(".navbar .navbar-nav > ul > li > a").removeClass("active"); 
-  $(this).addClass("active");          
-});</script>
+<script src="/js-file/js-code.js"></script>
 </html>

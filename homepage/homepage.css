@@ -472,6 +472,14 @@ footer{
 
 @media (max-width: 575.98px) { 
 
+  .main{
+    display: grid;
+    grid-auto-rows: minmax(90vh, auto);
+    margin: 0;
+    padding: 0;
+
+  }
+
   .middle-content{
     font-size: calc(1.525rem + 3.3vw);
 }
@@ -491,13 +499,15 @@ footer{
 }
 
 .section-8{
-  margin-top: -90%;
+ height: 100%;
 }
 
       .section-8 .row {
    
         flex-direction: column-reverse;
           }
+
+        
     
 
 

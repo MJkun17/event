@@ -249,14 +249,29 @@ ul li a{
 
   
 
-  @media (min-width: 992px) {
-    .section-4{
-      height: 90vh;
+  @media (max-width: 991.98px) { 
+
+     .main{
+      display: grid;
+      grid-auto-rows: minmax(90vh, auto);
+      margin: 0;
+      padding: 0;
+  
     }
+    
+
+
 
    }
 
    @media (max-width: 576px) { 
+    .main{
+      display: grid;
+      grid-auto-rows: minmax(90vh, auto);
+      margin: 0;
+      padding: 0;
+  
+    }
     
      .section-2 #para{
        text-align: center;
