@@ -310,7 +310,6 @@ section h1{
 
 /*start of media qurery*/
 
-
   @media (max-width: 991.98px) { 
 
     .main{
@@ -344,7 +343,6 @@ section h1{
 
   .navbar-brand{
     color: white;
-
   }
   
 
