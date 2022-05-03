@@ -140,6 +140,9 @@ ul li a{
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
 }
+ul li .nav-link{
+  color: white;
+}
 
 .navbar .navbar-nav .nav-item {
   position: relative;
