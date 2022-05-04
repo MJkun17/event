@@ -451,32 +451,6 @@ blockquote::after {
   width: 90%;
 }
 
-/*footer*/
-
-footer{
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #f6f6f6;
-  color: #BCBCBC;
-
-}
-
-.event{
-  color: #454545;
-}
-
-.event:hover{
-  color: white;
-}
-
-.list-group-item a{
-  color: #818181;
-}
-
-
-
 
 @media (max-width: 575.98px) { 
 

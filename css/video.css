@@ -24,22 +24,6 @@ html, body{
   padding: 0;
 }
 
-.custom-toggler-icon span {
-  display: block;
-  float: right;
-  width: 40px;
-  height: 2px;
-  background: #454545;
-  margin: 8px 0;
-}
-.custom-toggler-icon::after {
-  content: "";
-  float: left;
-  display: block;
-  width: 40px;
-  height: 2px;
-  background: #454545;
-}
 
 h5{
   font-family: 'Montserrat', sans-serif;
@@ -66,48 +50,7 @@ h1{
   border-radius: 4px;
 }
 
-.navbar{
-  position:absolute;
-  width:100%;
-  z-index:10;
-  max-width:100%;
-}
 
-.navbar-brand{
-  color: #454545;
-  font-family: 'Cormorant Garamond';
-  font-style: italic;
-
-
-}
-
-ul li .nav-link{
-  color: #454545;
-}
-
-
-.navbar .navbar-nav .nav-item {
-  position: relative;
-}
-.navbar .navbar-nav .nav-item::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: #454545;
-  width: 0%;
-  content: "";
-  height: 2px;
-}
-.navbar .navbar-nav .nav-item:hover::after {
-  width: 80%;
-  transition: all 0.5s;
-}
-
-.active-hover{
-  border-bottom: 2.5px solid #454545;
-}
 
 .wrap-banner{
   display:flex;
@@ -242,27 +185,6 @@ section h1{
     display: none;
   }
 
-  .custom-toggler-icon span {
-    background: white;
-  }
-  .custom-toggler-icon::after {
-    background: white;
-  }
-  
-  ul li .nav-link{
-    color: white;
-  }
-  .navbar .navbar-nav .nav-item::after {
-  background-color: white;
-  }
-  .active-hover{
-    border-bottom: 2.5px solid white;
-  }
-
-  .navbar-brand{
-    color: white;
-  }
-  
 
 
   .wrap-banner{
@@ -286,26 +208,6 @@ section h1{
 
 
 
-   .custom-toggler-icon span {
-     background: white;
-   }
-   .custom-toggler-icon::after {
-     background: white;
-   }
-
-   .navbar-brand{
-     color: white;
-   }
-   
-   ul li .nav-link{
-     color: white;
-   }
-   .navbar .navbar-nav .nav-item::after {
-   background-color: white;
-   }
-   .active-hover{
-     border-bottom: 2.5px solid white;
-   }
    
    .wrap-banner{
      margin: 0;
