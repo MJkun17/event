@@ -18,6 +18,30 @@ html, body{
   .section-1 {
     grid-row: 1/2;
 }
+  .section-2 {
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+  }
+
+  .section-3 {
+    grid-row: 3/4;
+   
+}
+.section-4 {
+  grid-row: 4/5;
+ 
+}
+
+.section-5{
+  grid-row: 5/6;
+}
 
 .row{
   margin: 0;
@@ -113,7 +137,7 @@ ul li .nav-link{
   display:flex;
   justify-content:center;
   align-items:center;
- background:url('/aboutus/about.jpg');
+ background:url('/assets/aboutus/about.jpg');
  background-size:cover;
   background-position:center;
   box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 42%);
@@ -131,6 +155,63 @@ section h1{
 /*end of section-1 css*/
 
 
+#para{
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#para h1{
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#para h5{
+
+  font-family: 'Montserrat', sans-serif;
+}
+#para .text-justify{
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.team-pic{
+  width: 75%;
+}
+
+.team-story{
+  width: 75%;
+
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*end of section-2&4 css*/
+
+  .parallax{
+    background-image: url(/assets/aboutus/about3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 42%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+  }
+
+
+/*end of section-3 css*/
+
+
+
+ 
 
 
   footer{
@@ -227,6 +308,7 @@ section h1{
     
 
 /*start of media qurery*/
+   
 
   @media (max-width: 991.98px) { 
 
@@ -312,11 +394,33 @@ section h1{
      height: 70vh;
    }
    
+    .section-2 #para{
+      text-align: center;
+    }
+    .team-pic{
+      width: 100%;
+    }
+
+    .team-story{
+      width: 100%;
+    }
+
+    .section-4 #para{
+      text-align: center;
+    }
 
     .wrap-banner h1{
      font-size: calc(1.525rem + 3.3vw);
     }
 
+    .section-1{
+      height: 60vh;
+    }
+
+    .parallax{
+     margin-top: 35%;
+     background-position: center;
+    }
 
     
    }
