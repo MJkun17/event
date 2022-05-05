@@ -421,12 +421,7 @@ blockquote::after {
 
 
 }
-#image_div #image_label
-{
- margin:0px;
- position:absolute;
- bottom:7px;
-}
+
 #image_div #image_label span
 {
  font-size:25px;
@@ -450,6 +445,69 @@ blockquote::after {
 .section-9 .container{
   width: 90%;
 }
+
+.thumbnail-pic {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#image_label {
+  transition: .5s ease;
+  opacity: 0;
+  text-align: left;
+  text-align: center;
+  margin:0px;
+  position:absolute;
+  bottom:7px;
+}
+
+.container1:hover .thumbnail-pic {
+  opacity: 0.3;
+}
+
+.container1:hover #image_label {
+  opacity: 1;
+}
+
+.container2:hover .thumbnail-pic {
+  opacity: 0.3;
+}
+
+.container2:hover #image_label {
+  opacity: 1;
+}
+
+
+
+/*footer*/
+
+footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  color: #BCBCBC;
+
+}
+
+.event{
+  color: #454545;
+}
+
+.event:hover{
+  color: white;
+}
+
+.list-group-item a{
+  color: #818181;
+}
+
+
 
 
 @media (max-width: 575.98px) { 
@@ -501,4 +559,5 @@ blockquote::after {
       display: none;
     }
    }
+
 
