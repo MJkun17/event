@@ -80,36 +80,15 @@ section h1{
 /*end of section-1 css*/
 
 
-.image {
-  position:relative;
-  background: black;
-  object-fit: cover;
-  overflow: hidden;
-}
+.item{
+    transition: .5s ease-in-out;
+  }
+  .item:hover{
+    filter: brightness(80%);
+  }
 
 
- 
-.image img {
-  width: 100%;
-  transition: 0.5s all ease-in-out;
-}
- 
-.image:hover img {
-  transform: scale(1.2);
-}
-
-
-.section-2 img{
-  opacity: 0.5;
-}
-.text {
-  left: 0;
-  position:absolute;
-  text-align:center;
-  top: 50%;
-  width: 100%;
-  color: white;
-}
+  
 
   footer{
     position: relative;

@@ -89,10 +89,6 @@ html, body{
   grid-row: 8/9;
 }
 
-.section-9{
-  grid-row: 9/10;
-}
-
 
 .row{
   margin: 0;
@@ -165,6 +161,10 @@ ul li .nav-link{
 
 .active-hover{
   border-bottom: 2.5px solid white;
+}
+
+.dropdown-toggle::after {
+  content: none;
 }
 
 
@@ -401,86 +401,6 @@ blockquote::after {
     align-items:center;
     color: white;
   }
-
-
-  /*section-9*/
-  #wrapper
-{
- text-align:center;
- margin:0 auto;
- padding:0px;
-
-}
-#image_div
-{
- position:relative;
-}
-#image_div img
-{
- width:100%;
-
-
-}
-
-#image_div #image_label span
-{
- font-size:25px;
- box-sizing:border-box;
- color:white;
- font-weight:bold;
- font-family: 'Montserrat', sans-serif;
-
-}
-
-.overlay{
-  background: black;
-    overflow: hidden;
-}
-
-.overlay img {
-  object-fit: cover;
-  opacity: 0.8;
-}
-
-.section-9 .container{
-  width: 90%;
-}
-
-.thumbnail-pic {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-#image_label {
-  transition: .5s ease;
-  opacity: 0;
-  text-align: left;
-  text-align: center;
-  margin:0px;
-  position:absolute;
-  bottom:7px;
-}
-
-.container1:hover .thumbnail-pic {
-  opacity: 0.3;
-}
-
-.container1:hover #image_label {
-  opacity: 1;
-}
-
-.container2:hover .thumbnail-pic {
-  opacity: 0.3;
-}
-
-.container2:hover #image_label {
-  opacity: 1;
-}
-
 
 
 /*footer*/
