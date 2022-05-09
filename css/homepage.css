@@ -119,14 +119,17 @@ html, body{
   max-width:100%;
 }
 
+
 .navbar-brand{
   color: white;
   font-family: 'Cormorant Garamond';
   font-style: italic;
-
+  padding-left: 15xp;
 
 }
-
+.left-toggler{
+  padding-right: 15px;
+}
 .navbar-collapse{
   font-family: 'Montserrat', sans-serif;
 

@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0 m-0">
 
-      <a class="navbar-brand" href="#"><h1>E-event</h1></a>
+      <a class="navbar-brand" href="http://127.0.0.1:5502/homepage.html"><h1>E-event</h1></a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
             <i class="custom-toggler-icon">
@@ -14,7 +14,7 @@
             
             <ul class="navbar-nav">
               <li class="nav-item ">
-                  <a class="nav-link  active-hover" href="homepage.html">HOME</a>
+                  <a class="nav-link" href="http://127.0.0.1:5502/homepage.html">HOME</a>
               </li>
               <!--
               <li class="nav-item">
@@ -25,21 +25,21 @@
                   GALLERY
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="picture.html">PICTURE</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5502/picture.html">PICTURE</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="video.html">VIDEOS</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5502/video.html">VIDEOS</a></li>
                   
               
                 </ul>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="services.html">SERVICES</a>
+                  <a class="nav-link" href="http://127.0.0.1:5502/services.html">SERVICES</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link " href="booking.html">BOOKING</a>
+                  <a class="nav-link " href="http://localhost/eevent-ver2.0/booking.php">BOOKING</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link " href="aboutus.html">ABOUT US</a>
+                  <a class="nav-link " href="http://127.0.0.1:5502/aboutus.html">ABOUT US</a>
               </li>
       
           </ul>
@@ -55,7 +55,14 @@
 </nav>
 
 <style>
-  
+
+  .navbar{
+    padding-left: 15px;
+  }
+  .left-toggler{
+    padding-right: 15px;
+  }
+
 .custom-toggler-icon span {
   display: block;
   float: right;
@@ -88,12 +95,16 @@
 
 }
 
+.dropdown-menu{
+  font-family: 'Montserrat', sans-serif;
+}
 .dropdown-toggle::after {
     content: none;
 }
 
 ul li .nav-link{
   color: #454545;
+   font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -116,9 +127,6 @@ ul li .nav-link{
   transition: all 0.5s;
 }
 
-.active-hover{
-  border-bottom: 2.5px solid #454545;
-}
 
 
 /*start of media qurery*/
@@ -127,57 +135,64 @@ ul li .nav-link{
 @media (max-width: 991.98px) { 
 
 
+
 .custom-toggler-icon span {
-background: white;
+background: #454545;
 }
 .custom-toggler-icon::after {
-background: white;
+background: #454545;
 }
 
 ul li .nav-link{
-color: white;
+color: #454545;
 }
+
 .navbar .navbar-nav .nav-item::after {
 background-color: white;
 }
-.active-hover{
-border-bottom: 2.5px solid white;
-}
 
 .navbar-brand{
-color: white;
+color: #454545;
+}
+
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+nav{
+  text-align: center;
+background-color: #ffffff;
+opacity: 0.9;
+}
+
+ul li .nav-link{
+  color: #000000;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-item{
+  text-align: center;
+}
+
 }
 
 
 
-
-}
 
 @media (max-width: 576px) { 
 
 
 
 .custom-toggler-icon span {
- background: white;
+ background: #454545;
 }
 .custom-toggler-icon::after {
- background: white;
+ background: #454545;
 }
 
 .navbar-brand{
- color: white;
+ color: #454545;
 }
-
-ul li .nav-link{
- color: white;
-}
-.navbar .navbar-nav .nav-item::after {
-background-color: white;
-}
-.active-hover{
- border-bottom: 2.5px solid white;
-}
-
 
 
 
