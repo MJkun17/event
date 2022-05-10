@@ -8,6 +8,16 @@
 
   <title>Document</title>
 
+<!-- for date picker-->
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+        
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
   
 <?php
@@ -19,18 +29,16 @@ include ('connect.php');
 if (isset($_POST['booknow']))
 {
     $name = $_POST['name'];
-    $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $venue = $_POST['venue'];
     $event = $_POST['event'];
     $guest = $_POST['guest'];
+    $date = $_POST['date'];
     $request = $_POST['request'];
 
 
 
-
-
-    $sql = "INSERT INTO eevent VALUES ('', '$name','$email','$mobile','$venue','$event','$guest','$request')";
+    $sql = "INSERT INTO eevent VALUES ('', '$name','$mobile','$venue','$event','$guest','$date','$request')";
     mysqli_query($con,$sql);
 
   
@@ -46,7 +54,7 @@ header("Location: thank.html");
 
    
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300&display=swap');
 
 html, body{
     margin: 0;
@@ -102,6 +110,13 @@ h1{
 
 
 
+.navbar{
+    padding-left: 15px;
+  }
+  .left-toggler{
+    padding-right: 15px;
+  }
+
 .custom-toggler-icon span {
   display: block;
   float: right;
@@ -129,11 +144,11 @@ h1{
 .navbar-brand{
   color: #454545;
   font-family: 'Cormorant Garamond';
-  font-style: italic;
-
-
 }
 
+.dropdown-menu{
+  font-family: 'Montserrat', sans-serif;
+}
 .dropdown-toggle::after {
     content: none;
 }
@@ -163,6 +178,7 @@ ul li .nav-link{
   transition: all 0.5s;
 }
 
+
 .active-hover{
   border-bottom: 2.5px solid #454545;
 }
@@ -183,7 +199,6 @@ ul li .nav-link{
 
 section h1{
   font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
   font-size: 5rem;
   color: white;
 }
@@ -274,27 +289,42 @@ footer{
 
 
   .custom-toggler-icon span {
-      background: white;
-      }
-      .custom-toggler-icon::after {
-      background: white;
-      }
+background: #454545;
+}
+.custom-toggler-icon::after {
+background: #454545;
+}
 
-      ul li .nav-link{
-      color: white;
-      }
-      .navbar .navbar-nav .nav-item::after {
-      background-color: white;
-      }
-      .active-hover{
-      border-bottom: 2.5px solid white;
-      }
+ul li .nav-link{
+color: #454545;
+}
 
-      .navbar-brand{
-      color: white;
-      }
+.navbar .navbar-nav .nav-item::after {
+background-color: white;
+}
+
+.navbar-brand{
+color: #454545;
+}
 
 
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+nav{
+  text-align: center;
+background-color: #ffffff;
+opacity: 0.9;
+}
+
+ul li .nav-link{
+  color: #000000;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-item{
+  text-align: center;
+}
 
 
 
@@ -306,7 +336,7 @@ footer{
 
 
   }
-
+/*end of media qurery 991px*/
   @media (max-width: 576px) { 
 
    .main{
@@ -360,7 +390,7 @@ footer{
    }
 
 
-
+/*end of media qurery 576px*/
 
 
 
@@ -378,8 +408,10 @@ label i {
     color: #999;
     font-size: 80%;
 }
+
+
 input, select {
-    border: 1px solid #ccc;
+    border: 1px solid #454545;
     padding: 10px;
     display: block;
     width: 100%;
@@ -418,7 +450,9 @@ input[type="submit"]:hover {
 }
 
 
-
+label{
+  font-family: 'Montserrat', sans-serif;
+}
 
 
 
@@ -442,9 +476,11 @@ function printError(elemId, hintMsg) {
 function validateForm() {
     // Retrieving the values of form elements 
     var name = document.contactForm.name.value;
-    var email = document.contactForm.email.value;
     var mobile = document.contactForm.mobile.value;
     var venue = document.contactForm.venue.value;
+    var guest = document.contactForm.guest.value;
+    var event = document.contactForm.event.value;
+    var date = document.contactForm.date.value;
     var request = document.contactForm.request.value;
     var hobbies = [];
     var checkboxes = document.getElementsByName("hobbies[]");
@@ -456,13 +492,13 @@ function validateForm() {
     }
     
 	// Defining error variables with a default value
-    var nameErr = emailErr = mobileErr = venueErr = requestErr = true;
+    var nameErr = mobileErr = venueErr = eventErr = guestErr = dateErr = requestErr = true;
     
     // Validate name
     if(name == "") {
         printError("nameErr", "Please enter your name");
     } else {
-        var regex = /^[a-zA-Z\s]+$/;                
+        var regex = /^[a-zA-Z\s\.]+$/;                
         if(regex.test(name) === false) {
             printError("nameErr", "Please enter a valid name");
         } else {
@@ -471,19 +507,6 @@ function validateForm() {
         }
     }
     
-    // Validate email address
-    if(email == "") {
-        printError("emailErr", "Please enter your email address");
-    } else {
-        // Regular expression for basic email validation
-        var regex = /^\S+@\S+\.\S+$/;
-        if(regex.test(email) === false) {
-            printError("emailErr", "Please enter a valid email address");
-        } else{
-            printError("emailErr", "");
-            emailErr = false;
-        }
-    }
     
     // Validate mobile number
     if(mobile == "") {
@@ -502,7 +525,7 @@ function validateForm() {
     if(venue == "") {
         printError("venueErr", "Please enter Venue");
     } else {
-        var regex = /^[a-zA-Z\s]+$/;                
+        var regex = /^[a-zA-Z\s,\s\.\s\1-9]+$/;                
         if(regex.test(venue) === false) {
             printError("venueErr", "Please enter a valid venue");
         } else {
@@ -512,12 +535,45 @@ function validateForm() {
     }
 
 
+  // Validate event
+  if(event == "none") {
+        printError("eventErr", "Please enter your event");
+    }
+    if(event == "Birthday" || event == "Wedding" || event == "Conference" || event == "Anniversary" || event == "Dedication" || event == "Proposal" || event == "Gender reveal" || event == "Car surprise"  ){
+      printError("eventErr", "");
+    }
     
-    // Validate venue
+
+          // Validate guest
+          if(guest == "0") {
+        printError("guestErr", "Please enter your guest");
+    } 
+    if(guest == "1-50" || guest == "50-70" || guest == "70-80" || guest == "80-90" || guest == "100-150"  ){
+      printError("guestErr", "");
+    }
+    
+
+  // Validate date
+  if(date == "") {
+        printError("dateErr", "Please enter your date");
+    } else {
+        var regex = /^[0-9]+(\/[0-9]+)*$/;
+        if(regex.test(date) === false) {
+            printError("dateErr", "Please enter a valid date");
+        } else{
+            printError("dateErr", "");
+            dateErr = false;
+        }
+    }
+
+    
+
+    
+    // Validate request
     if(request == "") {
         printError("requestErr", "Please enter request");
     } else {
-        var regex = /^[a-zA-Z\s]+$/;                
+        var regex = /^[a-zA-Z\s\,\s\.\s\1-9]+$/;                
         if(regex.test(request) === false) {
             printError("requestErr", "Please enter a valid request");
         } else {
@@ -528,15 +584,17 @@ function validateForm() {
 
     
     // Prevent the form from being submitted if there are any errors
-    if((nameErr || emailErr || mobileErr || venueErr || requestErr) == true) {
+    if((nameErr || mobileErr || venueErr || dateErr || requestErr) == true) {
        return false;
     } else {
         // Creating a string from input data for preview
         var dataPreview = "You've entered the following details: \n" +
                           "Full Name: " + name + "\n" +
-                          "Email Address: " + email + "\n" +
                           "Mobile Number: " + mobile + "\n" +
                           "Venue: " + venue + "\n" +
+                          "Event: " + event + "\n" +
+                          "Guest: " + guest + "\n" +
+                          "Date: " + date + "\n" +
                           "Request: " + request + "\n";
         if(hobbies.length) {
             dataPreview += "Hobbies: " + hobbies.join(", ");
@@ -549,12 +607,11 @@ function validateForm() {
 
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0 m-0">
 
-      <a class="navbar-brand" href="#"><h1>E-event</h1></a>
+      <a class="navbar-brand" href="http://127.0.0.1:5502/homepage.html"><h1>E-event</h1></a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
             <i class="custom-toggler-icon">
@@ -566,7 +623,7 @@ function validateForm() {
             
             <ul class="navbar-nav">
               <li class="nav-item ">
-                  <a class="nav-link  active-hover" href="homepage.html">HOME</a>
+                  <a class="nav-link" href="http://127.0.0.1:5502/homepage.html">HOME</a>
               </li>
               <!--
               <li class="nav-item">
@@ -577,21 +634,21 @@ function validateForm() {
                   GALLERY
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="picture.html">PICTURE</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5502/picture.html">PICTURE</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="video.html">VIDEOS</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5502/video.html">VIDEOS</a></li>
                   
               
                 </ul>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="services.html">SERVICES</a>
+                  <a class="nav-link" href="http://127.0.0.1:5502/services.html">SERVICES</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link " href="booking.html">BOOKING</a>
+                  <a class="nav-link " href="http://localhost/eevent-ver2.0/booking.php">BOOKING</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link " href="aboutus.html">ABOUT US</a>
+                  <a class="nav-link " href="http://127.0.0.1:5502/aboutus.html">ABOUT US</a>
               </li>
       
           </ul>
@@ -605,8 +662,6 @@ function validateForm() {
     </div>
     
 </nav>
-
-
 <div class="main">  
 
       <div class="section-1">
@@ -618,9 +673,9 @@ function validateForm() {
 
                         
                         <section class="wrap-banner">
-                                <div> 
-                                <h1>Booking</h>
-                                </div>
+                              
+                                <h1>Booking</h1>
+                            
                         </section>
 
 
@@ -634,73 +689,85 @@ function validateForm() {
                 <h1 class="text-center">Make an Event Request</h1>
 
 <div class="container">
-                <form name="contactForm" onsubmit="return validateForm()" action="booking.php" method="POST">
-                      <div class="row">
-
-                            <div class="col-md-6">
-                                <label>Full Name</label>
-                                <input type="text" name="name">
-                                <div class="error" id="nameErr"></div>
-                            </div>
-
-                              <div class="col-md-6">
-                                  <label>Email Address</label>
-                                  <input type="text" name="email">
-                                  <div class="error" id="emailErr"></div>
-                              </div>
-                  
-                      <div class="col-md-6">
-                          <label>Mobile Number</label>
-                          <input type="text" name="mobile" maxlength="11">
-                          <div class="error" id="mobileErr"></div>
-                      </div>
-
-                      <div class="col-md-6">
-                          <label>Venue</label>
-                          <input type="text" name="venue">
-                          <div class="error" id="venueErr"></div>
-                      </div>
-
-                      <div class="col-md-6">
-                          <label>Event</label>
-                          <select name="event">
-                              <option>Select</option>
-                              <option>Birthday</option>
-                              <option>Wedding</option>
-                              <option>Conference</option>
-                              <option>Anniversary</option>
-                          </select>
+                <form name="contactForm" onsubmit="return validateForm()" action="index.php" method="POST">
                      
-                      </div>
+                <div class="row">
 
-                      <div class="col-md-6">
-                          <label>Guests</label>
-                          <select name="guest">
-                          <option>Select</option>
-                              <option>1-50</option>
-                              <option>50-70</option>
-                              <option>70-80</option>
-                              <option>80-90</option>
-                              <option>100-150</option>
-                          </select>
-                         
-                      </div>
+                                  <div class="col-md-6">
+                                      <label>Full Name</label>
+                                      <input type="text" name="name">
+                                      <div class="error" id="nameErr"></div>
+                                  </div>
 
-                      <div class="row mb-3">
-                            <label >Textarea</label>
-                            <input type="text" name="request">
-                            <div class="error" id="requestErr"></div>
-                          </div>
+                  
+                                    <div class="col-md-6 mt-1">
+                                        <label>Mobile Number</label>
+                                        <input type="text" name="mobile" maxlength="11">
+                                        <div class="error" id="mobileErr"></div>
+                                    </div>
+
+                                    <div class="col-md-6 mt-1">
+                                        <label>Venue</label>
+                                        <input type="text" name="venue">
+                                        <div class="error" id="venueErr"></div>
+                                    </div>
+
+                                    <div class="col-md-6 mt-1">
+                                        <label>Event</label>
+                                        <select name="event">
+                                        <option value="none">Select</option>
+                                            <option value="Birthday">Birthday</option>
+                                            <option value="Wedding">Wedding</option>
+                                            <option value="Conference">Conference</option>
+                                            <option value="Anniversary">Anniversary</option>
+                                            <option value="Dedication">Dedication</option>
+                                            <option value="Proposal">Proposal</option>
+                                            <option value="Gender reveal">Gender reveal</option>
+                                            <option value="Car surprise">Car surprise</option>
+                                        </select>
+                                        <div class="error" id="eventErr"></div>
+                                    </div>
+
+                                  <div class="col-md-6 mt-1">
+                                      <label>Guests</label>
+                                      <select name="guest">
+                                      <option value="0">Select</option>
+                                          <option value="1-50">1-50</option>
+                                          <option value="50-70">50-70</option>
+                                          <option value="70-80">70-80</option>
+                                          <option value="80-90">80-90</option>
+                                          <option value="100-150">100-150</option>
+                                      </select>
+                                      <div class="error" id="guestErr"></div>
+                                    </div>
+
+                                    <div class="col-md-2 mt-1">
+                                    <label>Date</label>
+                                      <input type="text" name="date" class="datepicker" autocomplete="off">
+                                      <div class="error" id="dateErr"></div>
+                                      </div>
+                                  
+                      
+
+                                    <div class="row mb-3 mt-1">
+                                          <label>Special request</label>
+                                          <input type="text" name="request">
+                                          <div class="error" id="requestErr"></div>
+                                        </div>
 
                       
-                      <div class="row">
-                          <input type="submit" value="Submit" name="booknow">
-                      </div>
+                              <div class="row">
+                                  <input type="submit" value="Submit" name="booknow">
+                              </div>
 
-                      </div>
-                  </form>
                   </div>
+                  <!--end of row-->
+                  </form>
+
+               </div>
+               <!--end of container-->
       </div>
+      <!--end of section-2-->
       
 </div>
 
@@ -810,5 +877,16 @@ function validateForm() {
 </body>
 
 <script src="/js-file/js-code.js"></script>
+
+<script type="text/javascript">
+   
+    $('.datepicker').datepicker({ 
+        startDate: '+9d',
+        changeMonth: true,
+        todayHighlight : true
+    });
+  
+  
+</script>
 
 </html>

@@ -36,11 +36,16 @@ html, body{
 }
 .section-4 {
   grid-row: 4/5;
- 
+
 }
 
 .section-5{
   grid-row: 5/6;
+}
+
+.section-6{
+  grid-row: 6/7;
+  color: #454545;
 }
 
 .row{
@@ -107,6 +112,7 @@ section h1{
 #para h1{
   font-style: italic;
   font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
 }
 
 #para h5{
@@ -137,9 +143,10 @@ section h1{
 /*end of section-2&4 css*/
 
   .parallax{
-    background-image: url(/assets/aboutus/about3.jpg);
+    background-image: url(/assets/aboutus/parallaxaboutus.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 42%);
     display:flex;
     justify-content:center;
@@ -150,8 +157,11 @@ section h1{
 
 /*end of section-3 css*/
 
+.section-6 img{
+  opacity: 0.6;
+}
 
-
+/*end of section-6*/
 
 
 /*css for slide-in scroll*/
@@ -213,7 +223,7 @@ section h1{
     }
     
 
-/*start of media qurery*/
+/*start of media query*/
    
 
   @media (max-width: 991.98px) { 
@@ -278,6 +288,10 @@ section h1{
      font-size: calc(1.525rem + 3.3vw);
     }
 
+    #para h1{
+      font-size: calc(1.525rem + 3.3vw);
+    }
+
     .section-1{
       height: 60vh;
     }
@@ -289,3 +303,6 @@ section h1{
 
     
    }
+
+
+ 

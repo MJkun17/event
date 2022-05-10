@@ -113,6 +113,13 @@ html, body{
 }
 /*navbar*/
 .navbar{
+  padding-left: 15px;
+}
+.left-toggler{
+  padding-right: 15px;
+}
+
+.navbar{
   position:absolute;
   width:100%;
   z-index:10;
@@ -162,10 +169,6 @@ ul li .nav-link{
   transition: all 0.5s;
 }
 
-.active-hover{
-  border-bottom: 2.5px solid white;
-}
-
 .dropdown-toggle::after {
   content: none;
 }
@@ -192,7 +195,7 @@ background-image: url('/assets/parallax-pic.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 42%);
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 62%);
 }
 
 .carousel-caption {
@@ -395,9 +398,10 @@ blockquote::after {
 
 /*section-7*/
   .parallax{
-    background-image: url(/assets/parallax-pic.jpg);
+    background-image: url(/assets/homepage/parallaxhomepage.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 42%);
     display:flex;
     justify-content:center;
@@ -470,8 +474,13 @@ footer{
         flex-direction: column-reverse;
           }
 
-        
-    
+          .parallax{
+            margin-top: 25%;
+            background-position: center;
+           }
+       
+
+           
 
 
   }
@@ -481,6 +490,45 @@ footer{
     .left-toggler{
       display: none;
     }
+ 
+.custom-toggler-icon span {
+  background: #454545;
+  }
+  .custom-toggler-icon::after {
+  background: #454545;
+  }
+  
+  ul li .nav-link{
+  color: #454545;
+  }
+  
+  .navbar .navbar-nav .nav-item::after {
+  background-color: white;
+  }
+  
+  .navbar-brand{
+  color: #454545;
+  }
+  
+  
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  nav{
+    text-align: center;
+  background-color: #ffffff;
+  opacity: 0.9;
+  }
+  
+  ul li .nav-link{
+    color: #000000;
+     font-family: 'Montserrat', sans-serif;
+  }
+  
+  .dropdown-item{
+    text-align: center;
+  }
+  
    }
 
 
