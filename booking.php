@@ -71,6 +71,13 @@ html, body{
 
   }
 
+  a:link, a:visited,  a:hover, a:active
+  {
+      color: #454545;
+      text-decoration: none;
+  }
+  
+
   .section-1 {
     grid-row: 1/2;
 }
@@ -179,11 +186,6 @@ ul li .nav-link{
 }
 
 
-.active-hover{
-  border-bottom: 2.5px solid #454545;
-}
-
-
 
 .wrap-banner{
   display:flex;
@@ -212,64 +214,7 @@ footer{
   }
 
 
-/*css for slide-in scroll*/
  
-.scroll-container{
-  overflow: hidden;
-}
-    .scroll-element{
-      width: 100%;
-     
-    }
-
-    /**Styling scrollable elements*/
-    
-    .js-scroll {
-      opacity: 0;
-      transition: opacity 500ms;
-    }
-    
-    .js-scroll.scrolled {
-      opacity: 1;
-    }
-    
-
-    
-    .scrolled.slide-left {
-      animation: slide-in-left 1s ease-in-out both;
-    }
-    
-    .scrolled.slide-right {
-      animation: slide-in-right 1s ease-in-out both;
-    }
-
-    
-    @keyframes slide-in-left {
-      0% {
-        -webkit-transform: translateX(-100px);
-        transform: translateX(-100px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    
-    @keyframes slide-in-right {
-      0% {
-        -webkit-transform: translateX(100px);
-        transform: translateX(100px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    
 
 /*start of media qurery*/
 
@@ -400,15 +345,6 @@ ul li .nav-link{
     padding: 15px 40px 40px;
     margin: 50px auto 0;
 }
-label {
-    display: block;
-    margin-bottom: 5px
-}
-label i {
-    color: #999;
-    font-size: 80%;
-}
-
 
 input, select {
     border: 1px solid #454545;
@@ -420,46 +356,30 @@ input, select {
 }
 .row {
     padding-bottom: 10px;
-}
-.form-inline {
-    border: 1px solid #ccc;
-    padding: 8px 10px 4px;
-    border-radius: 2px;
-}
-.form-inline label, .form-inline input {
-    display: inline-block;
-    width: auto;
-    padding-right: 15px;
-}
+} 
 .error {
     color: red;
     font-size: 90%;
 }
-input[type="submit"] {
-    font-size: 110%;
-    font-weight: 100;
-    background: #006dcc;
-    border-color: #016BC1;
-    box-shadow: 0 3px 0 #0165b6;
-    color: #fff;
+
+#submit{
+  border: 2px solid #454545;
+    color: #454545;
     margin-top: 10px;
     cursor: pointer;
-}
-input[type="submit"]:hover {
-    background: #0165b6;
+    background-color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight : bold ;
 }
 
 
-label{
+::placeholder{
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
-
-
-
-
+#dropdown{
+  font-family: 'Montserrat', sans-serif;
+}
 
    
     </style>
@@ -512,7 +432,7 @@ function validateForm() {
     if(mobile == "") {
         printError("mobileErr", "Please enter your mobile number");
     } else {
-        var regex = /^[1-9]\d{9}$/;
+        var regex = /^[1-10]\d{10}$/;
         if(regex.test(mobile) === false) {
             printError("mobileErr", "Please enter a valid 11 digit mobile number");
         } else{
@@ -594,7 +514,7 @@ function validateForm() {
                           "Venue: " + venue + "\n" +
                           "Event: " + event + "\n" +
                           "Guest: " + guest + "\n" +
-                          "Date: " + date + "\n" +
+                          "Requested Date: " + date + "\n" +
                           "Request: " + request + "\n";
         if(hobbies.length) {
             dataPreview += "Hobbies: " + hobbies.join(", ");
@@ -611,7 +531,7 @@ function validateForm() {
 
     <div class="container-fluid p-0 m-0">
 
-      <a class="navbar-brand" href="http://127.0.0.1:5502/homepage.html"><h1>E-event</h1></a>
+      <a class="navbar-brand" style="color:#454545" href="http://127.0.0.1:5502/homepage.html"><h1>E-event</h1></a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
             <i class="custom-toggler-icon">
@@ -623,32 +543,29 @@ function validateForm() {
             
             <ul class="navbar-nav">
               <li class="nav-item ">
-                  <a class="nav-link" href="http://127.0.0.1:5502/homepage.html">HOME</a>
+                  <a class="nav-link" style="color:#454545" href="http://127.0.0.1:5502/homepage.html">HOME</a>
               </li>
-              <!--
-              <li class="nav-item">
-                  <a class="nav-link " href="package.html">PACKAGE</a>
-              </li>-->
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" style="color:#454545" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   GALLERY
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="http://127.0.0.1:5502/picture.html">PICTURE</a></li>
+                  <li><a class="dropdown-item" style="color:#454545" href="http://127.0.0.1:5502/picture.html">PICTURE</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="http://127.0.0.1:5502/video.html">VIDEOS</a></li>
+                  <li><a class="dropdown-item" style="color:#454545" href="http://127.0.0.1:5502/video.html">VIDEOS</a></li>
                   
               
                 </ul>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:5502/services.html">SERVICES</a>
+                  <a class="nav-link" style="color:#454545" href="http://127.0.0.1:5502/services.html">SERVICES</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link " href="http://localhost/eevent-ver2.0/booking.php">BOOKING</a>
+                  <a class="nav-link " style="color:#454545" href="http://localhost/eevent-ver2.0/booking.php">BOOKING</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link " href="http://127.0.0.1:5502/aboutus.html">ABOUT US</a>
+                  <a class="nav-link " style="color:#454545" href="http://127.0.0.1:5502/aboutus.html">ABOUT US</a>
               </li>
       
           </ul>
@@ -666,9 +583,7 @@ function validateForm() {
 
       <div class="section-1">
 
-          <button   onclick="topFunction()" id="myBtn" title="Go to top"><img src="/assets/arrow-t.png"  style="height: 20px; width: 20px;" alt=""></button>
-  
-                      
+    
                  
 
                         
@@ -689,33 +604,29 @@ function validateForm() {
                 <h1 class="text-center">Make an Event Request</h1>
 
 <div class="container">
-                <form name="contactForm" onsubmit="return validateForm()" action="booking.php" method="POST">
+                <form name="contactForm" onsubmit="return validateForm()" action="booking.php" method="POST" autocomplete="off"> 
                      
                 <div class="row">
 
-                                  <div class="col-md-6">
-                                      <label>Full Name</label>
-                                      <input type="text" name="name">
+                                  <div class="col-md-6 mb-3">
+                                      <input type="text" placeholder="Full Name" name="name">
                                       <div class="error" id="nameErr"></div>
                                   </div>
 
                   
-                                    <div class="col-md-6 mt-1">
-                                        <label>Mobile Number</label>
-                                        <input type="text" name="mobile" maxlength="11">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" placeholder="Mobile Number" name="mobile" maxlength="11">
                                         <div class="error" id="mobileErr"></div>
                                     </div>
 
-                                    <div class="col-md-6 mt-1">
-                                        <label>Venue</label>
-                                        <input type="text" name="venue">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" placeholder="Venue" name="venue">
                                         <div class="error" id="venueErr"></div>
                                     </div>
 
-                                    <div class="col-md-6 mt-1">
-                                        <label>Event</label>
-                                        <select name="event">
-                                        <option value="none">Select</option>
+                                    <div class="col-md-6 mb-3">
+                                        <select name="event" id="dropdown">
+                                        <option value="none">Type of Event</option>
                                             <option value="Birthday">Birthday</option>
                                             <option value="Wedding">Wedding</option>
                                             <option value="Conference">Conference</option>
@@ -728,10 +639,9 @@ function validateForm() {
                                         <div class="error" id="eventErr"></div>
                                     </div>
 
-                                  <div class="col-md-6 mt-1">
-                                      <label>Guests</label>
-                                      <select name="guest">
-                                      <option value="0">Select</option>
+                                  <div class="col-md-6 mb-3">
+                                      <select name="guest" id="dropdown">
+                                      <option value="0">Guests Count</option>
                                           <option value="1-50">1-50</option>
                                           <option value="50-70">50-70</option>
                                           <option value="70-80">70-80</option>
@@ -741,24 +651,23 @@ function validateForm() {
                                       <div class="error" id="guestErr"></div>
                                     </div>
 
-                                    <div class="col-md-2 mt-1">
-                                    <label>Date</label>
-                                      <input type="text" name="date" class="datepicker" autocomplete="off">
+                                    <div class="col-md-6 mb-3">
+                                      <input type="text" placeholder="Set a Date" name="date" class="datepicker" autocomplete="off">
                                       <div class="error" id="dateErr"></div>
                                       </div>
                                   
                       
 
-                                    <div class="row mb-3 mt-1">
-                                          <label>Special request</label>
-                                          <input type="text" name="request">
+                                    <div class="row mb-3 mb-3">
+                                          <textarea placeholder="Any special request in mind?" type="text" name="request" ></textarea>
                                           <div class="error" id="requestErr"></div>
                                         </div>
 
-                      
-                              <div class="row">
-                                  <input type="submit" value="Submit" name="booknow">
-                              </div>
+                                  <div class="row justify-content-center">
+                                          <div class="col-lg-3">
+                                              <input type="submit" value="Submit" name="booknow" id="submit">
+                                          </div>
+                                  </div>
 
                   </div>
                   <!--end of row-->
@@ -775,12 +684,12 @@ function validateForm() {
 
 <div class="container-fluid p-0 m-0">
   <!-- Footer -->
-  <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+  <footer class="text-lg-start text-dark" style="background-color: #ECEFF1">
 
 
     <!-- Section: Links  -->
     <section class="pt-1">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container  text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
@@ -876,7 +785,7 @@ function validateForm() {
  
 </body>
 
-<script src="/js-file/js-code.js"></script>
+
 
 <script type="text/javascript">
    
