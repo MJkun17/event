@@ -182,21 +182,20 @@ ul li .nav-link{
 }
 
 .cc1{
-background-image: url('/assets/social-pic.jpg');
+background-image: url('/assets/homepage/carousel.jpg');
 }
 .cc2{
-background-image: url('/assets/c1.jpg');
-}
-.cc3{
-background-image: url('/assets/parallax-pic.jpg');
+background-image: url('/assets/homepage/carousel1.jpg');
 }
 
-.cc1, .cc2, .cc3{
+
+.cc1, .cc2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 62%);
 }
+
 
 .carousel-caption {
     display: flex;
