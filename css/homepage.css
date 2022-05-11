@@ -23,7 +23,7 @@ html, body{
   /* for grid 100vh per section*/
   .main{
     display: grid;
-    grid-auto-rows: minmax(70vh, auto);
+    grid-auto-rows: minmax(65vh, auto);
     margin: 0;
     padding: 0;
 
@@ -435,13 +435,13 @@ footer{
 }
 
 
-
+/*@media (max-width: 575.98px) start*/
 
 @media (max-width: 575.98px) { 
 
   .main{
     display: grid;
-    grid-auto-rows: minmax(90vh, auto);
+    grid-auto-rows: minmax(60vh, auto);
     margin: 0;
     padding: 0;
 
@@ -449,6 +449,10 @@ footer{
 
   .middle-content{
     font-size: calc(1.525rem + 3.3vw);
+}
+
+.section-1 .carousel-item{
+ height: 60vh;
 }
 
 
@@ -477,6 +481,7 @@ footer{
           .parallax{
             margin-top: 25%;
             background-position: center;
+            margin-bottom: 25%;
            }
        
 
@@ -485,6 +490,8 @@ footer{
 
   }
 
+
+/*@media (max-width: 991.98px)  start*/
 
   @media (max-width: 991.98px) { 
     .left-toggler{
@@ -528,6 +535,70 @@ footer{
   .dropdown-item{
     text-align: center;
   }
+
+  .section-3 .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+        }
+        .section-5 .row {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+        
+              }
+      
+
+  .section-4 .row {
+  flex-direction: column-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+      }
+
+      
+  .section-8 .row {
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+        }
+
+      #para{
+        width: 100%;
+      }
+      .pic-home{
+        height: 100%;
+        width: 100%;
+      }
+
+      .carousel-buttom
+      br{
+        display: none;
+      }
   
    }
 

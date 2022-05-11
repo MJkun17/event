@@ -689,7 +689,7 @@ function validateForm() {
                 <h1 class="text-center">Make an Event Request</h1>
 
 <div class="container">
-                <form name="contactForm" onsubmit="return validateForm()" action="index.php" method="POST">
+                <form name="contactForm" onsubmit="return validateForm()" action="booking.php" method="POST">
                      
                 <div class="row">
 
