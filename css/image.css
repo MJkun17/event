@@ -187,6 +187,13 @@ section h1{
     
 
 /*start of media qurery*/
+@media (max-width: 1399.98px) { 
+  nav{
+  padding-bottom: 10px;
+background-color: #ffffff;
+}
+
+ }
 
   @media (max-width: 991.98px) { 
 
@@ -241,7 +248,19 @@ section h1{
    }
 
 
-   
-   .nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
-    background-color: #454545;
-}
+
+   @media (max-width: 767.98px) {
+
+
+    .main{
+      display: grid;
+      grid-auto-rows: minmax(60vh, auto);
+      margin: 0;
+      padding: 0;
+  
+    }
+    .section-2{
+      margin-top: 10%;
+    }
+ 
+    }

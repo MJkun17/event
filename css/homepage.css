@@ -29,6 +29,11 @@ html, body{
 
   }
 
+.navbar-brand img{
+  height: 100px; width: 150px;
+}
+
+
 
   .custom-toggler-icon span {
     display: block;
@@ -113,9 +118,7 @@ html, body{
   border-radius: 4px;
 }
 /*navbar*/
-.navbar{
-  padding-left: 15px;
-}
+
 .left-toggler{
   padding-right: 15px;
 }
@@ -418,21 +421,13 @@ footer{
   bottom: 0;
   width: 100%;
   background-color: #f6f6f6;
-  color: #BCBCBC;
-
-}
-
-.event{
   color: #454545;
+
 }
 
-.event:hover{
-  color: white;
-}
 
-.list-group-item a{
-  color: #818181;
-}
+
+
 
 
 /*@media (max-width: 575.98px) start*/
@@ -494,9 +489,22 @@ footer{
 /*@media (max-width: 991.98px)  start*/
 
   @media (max-width: 991.98px) { 
+
+    .navbar-brand img{
+      -webkit-filter: grayscale(5) invert(1);
+       filter: grayscale(5) invert(1);
+       height: 90px; width: 150px;
+      }
+
     .left-toggler{
       display: none;
     }
+
+    ul li .nav-link{
+      color: #454545;
+       font-family: 'Montserrat', sans-serif;
+    }
+    
  
 .custom-toggler-icon span {
   background: #454545;
@@ -512,25 +520,18 @@ footer{
   .navbar .navbar-nav .nav-item::after {
   background-color: white;
   }
-  
-  .navbar-brand{
-  color: #454545;
-  }
-  
-  
+
   .navbar .navbar-nav .nav-item {
     position: relative;
   }
   nav{
     text-align: center;
   background-color: #ffffff;
-  opacity: 0.9;
   }
   
-  ul li .nav-link{
-    color: #000000;
-     font-family: 'Montserrat', sans-serif;
-  }
+  nav .navbar-nav li a{
+    color: #454545 !important;
+    }
   
   .dropdown-item{
     text-align: center;

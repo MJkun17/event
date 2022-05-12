@@ -115,6 +115,11 @@ h1{
   border-radius: 4px;
 }
 
+.navbar-brand img{
+      -webkit-filter: grayscale(5) invert(1);
+       filter: grayscale(5) invert(1);
+       height: 90px; width: 150px;
+      }
 
 
 .navbar{
@@ -217,7 +222,13 @@ footer{
  
 
 /*start of media qurery*/
+@media (max-width: 1399.98px) { 
+  nav{
+  padding-bottom: 10px;
+background-color: #ffffff;
+}
 
+ }
   @media (max-width: 991.98px) { 
 
     .main{
@@ -527,11 +538,20 @@ function validateForm() {
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
+<nav class="navbar navbar-expand-lg m-0 p-0" aria-label="Tenth navbar example">
 
     <div class="container-fluid p-0 m-0">
 
-      <a class="navbar-brand" style="color:#454545" href="http://127.0.0.1:5502/homepage.html"><h1>E-event</h1></a>
+      <a class="navbar-brand" style="color:#454545" href="http://127.0.0.1:5502/homepage.html">
+      <?php 
+                              if (file_exists ('./assets/homelogo.png')) {
+                                  echo '<img src="./assets/homelogo.png" title="contrast" class="contrast">'; 
+                              } 
+                                  else 
+                              { 
+                                  echo ''; 
+                              }
+                          ?></a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
             <i class="custom-toggler-icon">

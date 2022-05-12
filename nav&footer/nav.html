@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg" aria-label="Tenth navbar example">
+<nav class="navbar navbar-expand-lg p-0 m-0" aria-label="Tenth navbar example">
 
     <div class="container-fluid p-0 m-0">
 
-      <a class="navbar-brand" style="color:#454545" href="http://127.0.0.1:5502/homepage.html"><h1>E-event</h1></a>
+      <a class="navbar-brand" href="http://127.0.0.1:5502/homepage.html"> <img src="/assets/homelogo.png" alt=""  title="contrast" class="contrast"></a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
             <i class="custom-toggler-icon">
@@ -52,6 +52,15 @@
 </nav>
 
 <style>  
+
+
+.navbar-brand img{
+      -webkit-filter: grayscale(5) invert(1);
+       filter: grayscale(5) invert(1);
+       height: 90px; width: 150px;
+      }
+
+
   .navbar{
     padding-left: 15px;
   }
@@ -83,13 +92,6 @@
   max-width:100%;
 }
 
-.navbar-brand{
-  color: #454545;
-  font-family: 'Cormorant Garamond';
-  font-style: italic;
-
-
-}
 
 .dropdown-menu{
   font-family: 'Montserrat', sans-serif;
@@ -126,9 +128,22 @@ ul li .nav-link{
 
 
 /*start of media qurery*/
-   
+@media (max-width: 1399.98px) { 
+  nav{
+  padding-bottom: 10px;
+background-color: #ffffff;
+}
+
+ }
+
 
 @media (max-width: 991.98px) { 
+
+  .navbar-brand img{
+      -webkit-filter: grayscale(5) invert(1);
+       filter: grayscale(5) invert(1);
+       height: 90px; width: 150px;
+      }
 
 
 
@@ -139,30 +154,19 @@ background: #454545;
 background: #454545;
 }
 
-ul li .nav-link{
-color: #454545;
-}
-
-.navbar .navbar-nav .nav-item::after {
-background-color: white;
-}
-
-.navbar-brand{
-color: #454545;
-}
 
 
 .navbar .navbar-nav .nav-item {
   position: relative;
 }
+
 nav{
   text-align: center;
 background-color: #ffffff;
-opacity: 0.9;
 }
 
 ul li .nav-link{
-  color: #000000;
+  color: #454545;
    font-family: 'Montserrat', sans-serif;
 }
 

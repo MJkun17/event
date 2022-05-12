@@ -192,6 +192,13 @@ section h1{
     
 
 /*start of media qurery*/
+@media (max-width: 1399.98px) { 
+  nav{
+  padding-bottom: 10px;
+background-color: #ffffff;
+}
+
+ }
 
   @media (max-width: 991.98px) { 
 
