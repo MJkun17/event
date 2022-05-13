@@ -62,6 +62,8 @@ html, body{
     
   }
 
+
+
   /* for grid 100vh per section*/
   .main{
     display: grid;

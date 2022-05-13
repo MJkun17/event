@@ -5,6 +5,14 @@ html, body{
     padding: 0;
     
   }
+  :root {
+    --color1: #F6F6F6;
+    --color2: #E3E3E3;
+    --color3: #818181;
+    --color4: #454545;
+    --color5: #202020;
+  }
+  
 
   /* for grid 100vh per section*/
   .main{
@@ -53,7 +61,7 @@ h1{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: 	#B2BEB5;
+  background-color: var(--color3);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -61,7 +69,7 @@ h1{
 
 
 #myBtn:hover{
-  background-color: 	#454545;
+  background-color: 	var(--color4);
 }
 
 #myBtn img:hover{
@@ -87,7 +95,7 @@ section h1{
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 5rem;
-  color: white;
+  color: var(--color1);
 }
 
 /*end of section-1 css*/
@@ -108,13 +116,13 @@ section h1{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #f6f6f6;
-    color: #BCBCBC;
+    background-color: var(--color1);
+    color: var(--color3);
   
   }
   
   .event{
-    color: #454545;
+    color: var(--color4);
   }
   
   .event:hover{
@@ -130,7 +138,7 @@ section h1{
   ul li a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color: #818181;
+    color: var(--color3);
    
   }
 
@@ -200,7 +208,7 @@ section h1{
 @media (max-width: 1399.98px) { 
   nav{
   padding-bottom: 10px;
-background-color: #ffffff;
+background-color: var(--color1);
 }
 
  }

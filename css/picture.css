@@ -5,7 +5,14 @@ html, body{
     padding: 0;
     
   }
-
+  :root {
+    --color1: #F6F6F6;
+    --color2: #E3E3E3;
+    --color3: #818181;
+    --color4: #454545;
+    --color5: #202020;
+  }
+  
   /* for grid 100vh per section*/
   .main{
     display: grid;
@@ -41,32 +48,6 @@ h1{
 }
 
 
-#myBtn{
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: 	#B2BEB5;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-
-#myBtn:hover{
-  background-color: 	#454545;
-}
-
-#myBtn img:hover{
-  -webkit-filter: grayscale(5) invert(1);
-  filter: grayscale(5) invert(1);
-}
-
-
 .wrap-banner{
   display:flex;
   justify-content:center;
@@ -83,7 +64,7 @@ section h1{
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 5rem;
-  color: white;
+  color: var(--color1);
 }
 
 /*end of section-1 css*/
@@ -91,7 +72,7 @@ section h1{
 
 .image {
   position:relative;
-  background: black;
+  background: var(--color5);
   object-fit: cover;
   overflow: hidden;
 }
@@ -117,7 +98,7 @@ section h1{
   text-align:center;
   top: 50%;
   width: 100%;
-  color: white;
+  color: var(--color1);
 }
 
   footer{
@@ -125,21 +106,21 @@ section h1{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #f6f6f6;
-    color: #BCBCBC;
+    background-color: var(--color1);
+    color: var(--color3);
   
   }
   
   .event{
-    color: #454545;
+    color: var(--color1);
   }
   
   .event:hover{
-    color: white;
+    color: var(--color1);
   }
   
   .list-group-item a{
-    color: #818181;
+    color: var(--color3);
   }
   
   
@@ -147,77 +128,20 @@ section h1{
   ul li a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color: #818181;
+    color: var(--color3);
    
   }
 
 
 
 
-/*css for slide-in scroll*/
- 
-.scroll-container{
-  overflow: hidden;
-}
-    .scroll-element{
-      width: 100%;
-     
-    }
 
-    /**Styling scrollable elements*/
-    
-    .js-scroll {
-      opacity: 0;
-      transition: opacity 500ms;
-    }
-    
-    .js-scroll.scrolled {
-      opacity: 1;
-    }
-    
-
-    
-    .scrolled.slide-left {
-      animation: slide-in-left 1s ease-in-out both;
-    }
-    
-    .scrolled.slide-right {
-      animation: slide-in-right 1s ease-in-out both;
-    }
-
-    
-    @keyframes slide-in-left {
-      0% {
-        -webkit-transform: translateX(-100px);
-        transform: translateX(-100px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    
-    @keyframes slide-in-right {
-      0% {
-        -webkit-transform: translateX(100px);
-        transform: translateX(100px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    
 
 /*start of media qurery*/
 @media (max-width: 1399.98px) { 
   nav{
   padding-bottom: 10px;
-background-color: #ffffff;
+background-color: var(--color1);
 }
 
  }

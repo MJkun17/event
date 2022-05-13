@@ -6,6 +6,14 @@ html, body{
     
   }
 
+  :root {
+    --color1: #F6F6F6;
+    --color2: #E3E3E3;
+    --color3: #818181;
+    --color4: #454545;
+    --color5: #202020;
+  }
+  
   /* for grid 100vh per section*/
   .main{
     display: grid;
@@ -132,7 +140,7 @@ h1{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: 	#B2BEB5;
+  background-color: 	var(--color3);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -140,7 +148,7 @@ h1{
 
 
 #myBtn:hover{
-  background-color: 	#454545;
+  background-color: 	var(--color4);
 }
 
 #myBtn img:hover{
@@ -165,7 +173,7 @@ section h1{
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 5rem;
-  color: white;
+  color: var(--color1);
 }
 
 /*end of section-1 css*/

@@ -52,6 +52,13 @@
 
 <style>  
 
+:root {
+  --color1: #F6F6F6;
+  --color2: #E3E3E3;
+  --color3: #818181;
+  --color4: #454545;
+  --color5: #202020;
+}
 
 .navbar-brand img{
       -webkit-filter: grayscale(5) invert(1);
@@ -75,7 +82,7 @@
   float: right;
   width: 40px;
   height: 2px;
-  background: #454545;
+  background: var(--color4);
   margin: 8px 0;
 }
 .custom-toggler-icon::after {
@@ -84,7 +91,7 @@
   display: block;
   width: 40px;
   height: 2px;
-  background: #454545;
+  background: var(--color4);
 }
 
 .navbar{
@@ -117,7 +124,7 @@ ul li .nav-link{
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #454545;
+  background-color: var(--color4);
   width: 0%;
   content: "";
   height: 2px;
@@ -133,7 +140,7 @@ ul li .nav-link{
 @media (max-width: 1399.98px) { 
   nav{
   padding-bottom: 10px;
-background-color: #ffffff;
+background-color: var(--color1);
 }
 
  }
@@ -164,11 +171,11 @@ background: #454545;
 
 nav{
   text-align: center;
-background-color: #ffffff;
+background-color: var(--color1);
 }
 
 ul li .nav-link{
-  color: #454545;
+  color: var(--color4);
    font-family: 'Montserrat', sans-serif;
 }
 
@@ -186,15 +193,12 @@ ul li .nav-link{
 
 
 .custom-toggler-icon span {
- background: #454545;
+ background: var(--color4);
 }
 .custom-toggler-icon::after {
- background: #454545;
+ background: var(--color4);
 }
 
-.navbar-brand{
- color: #454545;
-}
 
 
 
