@@ -9,7 +9,7 @@ html, body{
   /* for grid 100vh per section*/
   .main{
     display: grid;
-    grid-auto-rows: minmax( 70vh, auto);
+    grid-auto-rows: minmax( 60vh, auto);
     margin: 0;
     padding: 0;
 
@@ -18,6 +18,94 @@ html, body{
   .section-1 {
     grid-row: 1/2;
 }
+
+.section-2 {
+  grid-row: 2/3;
+  margin-bottom: 5%;
+
+}
+
+.section-3 {
+  grid-row: 3/4;
+  margin-bottom: 5%;
+}
+
+.section-4 {
+  grid-row: 4/5;
+  margin-bottom: 5%;
+}
+
+.section-5 {
+  grid-row: 5/6;
+  margin-bottom: 5%;
+}
+
+.section-6 {
+  grid-row: 6/7;
+  margin-bottom: 5%;
+}
+
+.section-7 {
+  grid-row: 7/8;
+  margin-bottom: 5%;
+
+}
+
+.section-8 {
+  grid-row: 8/9;
+  margin-bottom: 5%;
+
+}
+
+.section-9 {
+  grid-row: 9/10;
+  margin-bottom: 5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+ h2{
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+#paragraph{
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#paragraph h1{
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+}
+
+#paragraph h5{
+
+  font-family: 'Montserrat', sans-serif;
+}
+#paragraph .text-justify{
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.service-pic{
+  width: 75%;
+}
+
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .row{
   margin: 0;
@@ -51,6 +139,15 @@ h1{
 }
 
 
+#myBtn:hover{
+  background-color: 	#454545;
+}
+
+#myBtn img:hover{
+  -webkit-filter: grayscale(5) invert(1);
+  filter: grayscale(5) invert(1);
+}
+
 
 .wrap-banner{
   display:flex;
@@ -74,8 +171,10 @@ section h1{
 /*end of section-1 css*/
 
 
+.more{
 
-
+  margin-top: 5%;
+}
 
 
 /*css for slide-in scroll*/
@@ -143,7 +242,7 @@ section h1{
 
     .main{
      display: grid;
-     grid-auto-rows: minmax(90vh, auto);
+     grid-auto-rows: minmax(50vh, auto);
      margin: 0;
      padding: 0;
  
@@ -157,7 +256,28 @@ section h1{
 
   .wrap-banner{
     margin: 0;
-    height: 75vh;
+    height: 50vh;
+  }
+
+  .section-3 .row{
+    flex-direction: column-reverse;
+  }
+
+  .section-5 .row{
+    flex-direction: column-reverse;
+  }
+
+  .section-7 .row{
+    flex-direction: column-reverse;
+  }
+
+  #paragraph h1{
+    text-align: center;
+  }
+  
+  #paragraph h5{
+  
+    text-align: center;
   }
 
  
@@ -166,27 +286,37 @@ section h1{
 
   @media (max-width: 576px) { 
 
-   .main{
-     display: grid;
-     grid-auto-rows: minmax(90vh, auto);
-     margin: 0;
-     padding: 0;
+    .main{
+      display: grid;
+      grid-auto-rows: minmax(50vh, auto);
+      margin: 0;
+      padding: 0;
+  
+    }
  
-   }
+ 
 
 
-
-   
-   .wrap-banner{
-     margin: 0;
-     height: 70vh;
-   }
-   
 
     .wrap-banner h1{
      font-size: calc(1.525rem + 3.3vw);
     }
 
+
+    
+ #paragraph{
+       text-align: center;
+     }
+     .service-pic{
+       width: 100%;
+     }
+
+
+ 
+     #paragraph h1{
+       font-size: calc(1.525rem + 3.3vw);
+     }
+ 
 
     
    }

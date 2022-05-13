@@ -117,11 +117,19 @@ html, body{
   padding: 15px;
   border-radius: 4px;
 }
+
+
+#myBtn:hover{
+  background-color: 	#454545;
+}
+
+#myBtn img:hover{
+  -webkit-filter: grayscale(5) invert(1);
+  filter: grayscale(5) invert(1);
+}
+
 /*navbar*/
 
-.left-toggler{
-  padding-right: 15px;
-}
 
 .navbar{
   position:absolute;
@@ -138,9 +146,7 @@ html, body{
   padding-left: 15xp;
 
 }
-.left-toggler{
-  padding-right: 15px;
-}
+
 .navbar-collapse{
   font-family: 'Montserrat', sans-serif;
 
@@ -490,15 +496,21 @@ footer{
 
   @media (max-width: 991.98px) { 
 
+
+    .main{
+      display: grid;
+      grid-auto-rows: minmax(65vh, auto);
+      margin: 0;
+      padding: 0;
+  
+    }
+
     .navbar-brand img{
       -webkit-filter: grayscale(5) invert(1);
        filter: grayscale(5) invert(1);
        height: 90px; width: 150px;
       }
 
-    .left-toggler{
-      display: none;
-    }
 
     ul li .nav-link{
       color: #454545;
@@ -536,7 +548,10 @@ footer{
   .dropdown-item{
     text-align: center;
   }
-
+.section-2{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
   .section-3 .row {
     display: flex;
     align-items: center;
@@ -548,6 +563,20 @@ footer{
     width: 100%;
   
         }
+
+        .section-4 .row {
+          flex-direction: column-reverse;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+        
+              }
+        
         .section-5 .row {
           display: flex;
           align-items: center;
@@ -559,20 +588,11 @@ footer{
           width: 100%;
         
               }
-      
 
-  .section-4 .row {
-  flex-direction: column-reverse;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-
-      }
+              .section-6 h1{
+                font-size: 1.5rem;
+              
+              }
 
       
   .section-8 .row {
@@ -596,12 +616,20 @@ footer{
         width: 100%;
       }
 
+      .section-6 .carousel-item{
+        height: 50vh;
+      }
+
       .carousel-buttom
       br{
         display: none;
       }
       .middle-content-buttom{
         font-size: calc(1.525rem + 3.3vw);
+  }
+
+  .section-8 .container{
+    margin-top: 10%;
   }
   
    }

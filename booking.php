@@ -46,7 +46,7 @@ if (isset($_POST['booknow']))
 if (isset($_POST['booknow'])) 
 {
 //do somthing
-header("Location: thank.html");
+header("Location: http://127.0.0.1:5502/thank.html");
 }
 
 ?>
@@ -121,14 +121,16 @@ h1{
        height: 90px; width: 150px;
       }
 
-
-.navbar{
-    padding-left: 15px;
+      .navbar-brand{
+    margin-left: 20px;
   }
-  .left-toggler{
-    padding-right: 15px;
+  .navbar-nav li{
+    margin: 20px;
   }
-
+  .navbar-nav{
+    margin-right: 20px;
+  }
+  
 .custom-toggler-icon span {
   display: block;
   float: right;
@@ -153,10 +155,6 @@ h1{
   max-width:100%;
 }
 
-.navbar-brand{
-  color: #454545;
-  font-family: 'Cormorant Garamond';
-}
 
 .dropdown-menu{
   font-family: 'Montserrat', sans-serif;
@@ -216,6 +214,7 @@ section h1{
 
 footer{
     font-family: 'Montserrat', sans-serif;
+    
   }
 
 
@@ -239,9 +238,6 @@ background-color: #ffffff;
  
    }
    
-   .left-toggler{
-    display: none;
-  }
 
 
   .custom-toggler-icon span {
@@ -293,6 +289,12 @@ ul li .nav-link{
 
   }
 /*end of media qurery 991px*/
+
+@media (max-width: 767.98px) { footer{
+  text-align: center;
+} }
+
+/*end of media 767.98px*/
   @media (max-width: 576px) { 
 
    .main{
@@ -559,11 +561,15 @@ function validateForm() {
             </i>
           </button>
 
-          <div class="collapse navbar-collapse justify-content-md-center " id="navbarsExample08">
+          <div class="collapse navbar-collapse justify-content-lg-end" id="navbarsExample08">
             
             <ul class="navbar-nav">
               <li class="nav-item ">
                   <a class="nav-link" style="color:#454545" href="http://127.0.0.1:5502/homepage.html">HOME</a>
+              </li>
+
+              <li class="nav-item ">
+                  <a class="nav-link" style="color:#454545" href="http://127.0.0.1:5502/homepage.html">PACKAGE</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -591,10 +597,6 @@ function validateForm() {
           </ul>
               
           </div>
-
-          <i class="custom-toggler-icon left-toggler">
-            <span></span>
-          </i>
 
     </div>
     
@@ -704,7 +706,7 @@ function validateForm() {
 
 <div class="container-fluid p-0 m-0">
   <!-- Footer -->
-  <footer class="text-lg-start text-dark" style="background-color: #ECEFF1">
+  <footer class="text-lg-start text-dark text-md-center" style="background-color: #ECEFF1">
 
 
     <!-- Section: Links  -->

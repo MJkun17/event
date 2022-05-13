@@ -54,6 +54,15 @@ h1{
 }
 
 
+#myBtn:hover{
+  background-color: 	#454545;
+}
+
+#myBtn img:hover{
+  -webkit-filter: grayscale(5) invert(1);
+  filter: grayscale(5) invert(1);
+}
+
 
 .wrap{
   display:flex;
@@ -210,11 +219,6 @@ background-color: #ffffff;
  
    }
    
-   .left-toggler{
-    display: none;
-  }
-
-
 
   .wrap-banner{
     margin: 0;

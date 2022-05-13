@@ -10,23 +10,25 @@
             </i>
           </button>
 
-          <div class="collapse navbar-collapse justify-content-md-center " id="navbarsExample08">
+          <div class="collapse navbar-collapse justify-content-lg-end " id="navbarsExample08">
             
             <ul class="navbar-nav">
               <li class="nav-item " style="color:#454545">
                   <a class="nav-link"  href="http://127.0.0.1:5502/homepage.html">HOME</a>
               </li>
 
+              <li class="nav-item " style="color:#454545">
+                <a class="nav-link"  href="http://127.0.0.1:5502/homepage.html">PACKAGE</a>
+            </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" style="color:#454545" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   GALLERY
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" style="color:#454545" href="http://127.0.0.1:5502/picture.html">PICTURE</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" style="color:#454545" href="http://127.0.0.1:5502/video.html">VIDEOS</a></li>
-                  
-              
+                  <li class="m-0 p-0 text-center"><a class="dropdown-item" style="color:#454545" href="http://127.0.0.1:5502/picture.html">PICTURE</a></li>
+                  <li class="m-0 p-0"><hr class="dropdown-divider"></li>
+                  <li class="m-0 p-0 text-center"><a class="dropdown-item" style="color:#454545" href="http://127.0.0.1:5502/video.html">VIDEOS</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -43,9 +45,6 @@
               
           </div>
 
-          <i class="custom-toggler-icon left-toggler">
-            <span></span>
-          </i>
 
     </div>
     
@@ -61,13 +60,16 @@
       }
 
 
-  .navbar{
-    padding-left: 15px;
+      .navbar-brand{
+    margin-left: 20px;
   }
-  .left-toggler{
-    padding-right: 15px;
+  .navbar-nav li{
+    margin: 20px;
   }
-
+  .navbar-nav{
+    margin-right: 20px;
+  }
+  
 .custom-toggler-icon span {
   display: block;
   float: right;

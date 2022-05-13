@@ -9,7 +9,7 @@ html, body{
   /* for grid 100vh per section*/
   .main{
     display: grid;
-    grid-auto-rows: minmax( 70vh, auto);
+    grid-auto-rows: minmax( 50vh, auto);
     margin: 0;
     padding: 0;
 
@@ -76,6 +76,15 @@ h1{
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+}
+
+#myBtn:hover{
+  background-color: 	#454545;
+}
+
+#myBtn img:hover{
+  -webkit-filter: grayscale(5) invert(1);
+  filter: grayscale(5) invert(1);
 }
 
 
@@ -230,21 +239,18 @@ section h1{
 
     .main{
      display: grid;
-     grid-auto-rows: minmax(90vh, auto);
+     grid-auto-rows: minmax(50vh, auto);
      margin: 0;
      padding: 0;
  
    }
    
-   .left-toggler{
-    display: none;
-  }
 
 
 
   .wrap-banner{
     margin: 0;
-    height: 75vh;
+    height: 50vh;
   }
 
   .section-2 .row {
@@ -289,7 +295,7 @@ section h1{
 
    .main{
      display: grid;
-     grid-auto-rows: minmax(75vh, auto);
+     grid-auto-rows: minmax(50vh, auto);
      margin: 0;
      padding: 0;
  
@@ -300,7 +306,7 @@ section h1{
 
    .wrap-banner{
      margin: 0;
-     height: 70vh;
+     height: 50vh;
    }
    
     .section-2 #para{
