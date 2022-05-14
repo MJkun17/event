@@ -212,6 +212,9 @@ section h1{
 
 /*end of section-1 css*/
 
+.section-2 h1{
+  color: #454545;
+}
 
 
 footer{
@@ -571,7 +574,7 @@ function validateForm() {
               </li>
 
               <li class="nav-item ">
-                  <a class="nav-link" style="color:#454545" href="http://127.0.0.1:5502/homepage.html">PACKAGE</a>
+                  <a class="nav-link" style="color:#454545" href="http://127.0.0.1:5502/package.html">PACKAGE</a>
               </li>
 
               <li class="nav-item dropdown">

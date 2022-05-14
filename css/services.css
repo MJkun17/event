@@ -74,7 +74,7 @@ html, body{
 
  h2{
   font-family: 'Montserrat', sans-serif;
-
+  color: var(--color4);
 
 }
 
@@ -84,6 +84,7 @@ html, body{
   display: grid;
   align-items: center;
   justify-content: center;
+  color: var(--color4);
 
 }
 
@@ -91,15 +92,18 @@ html, body{
   font-style: italic;
   font-family: 'Cormorant Garamond', serif;
   font-size: 4rem;
+
 }
 
 #paragraph h5{
 
   font-family: 'Montserrat', sans-serif;
+
 }
 #paragraph .text-justify{
 
   font-family: 'Montserrat', sans-serif;
+
 }
 
 .service-pic{

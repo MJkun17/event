@@ -41,6 +41,7 @@ h5{
 h1{
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
+  color: var(--color4);
 }
 
 

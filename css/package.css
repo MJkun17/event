@@ -6,10 +6,23 @@ html, body{
     
   }
 
+  :root {
+    --color1: #F6F6F6;
+    --color2: #E3E3E3;
+    --color3: #818181;
+    --color4: #454545;
+    --color5: #202020;
+  }
+
+  *{
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
   /* for grid 100vh per section*/
   .main{
     display: grid;
-    grid-auto-rows: minmax( 70vh, auto);
+    grid-auto-rows: minmax( 60vh, auto);
     margin: 0;
     padding: 0;
 
@@ -18,16 +31,22 @@ html, body{
   .section-1 {
     grid-row: 1/2;
 }
-
+.section-2 {
+  grid-row: 2/3;
+}
+.section-3 {
+  grid-row: 3/4;
+}
+.section-4 {
+  grid-row: 4/5;
+}
 .row{
   margin: 0;
   padding: 0;
 }
 
 
-h5{
-  font-family: 'Montserrat', sans-serif;
-}
+
 
 h1{
   font-family: 'Cormorant Garamond', serif;
@@ -44,7 +63,7 @@ h1{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: 	#B2BEB5;
+  background-color: 	var(--color3);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -78,7 +97,7 @@ section h1{
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 5rem;
-  color: white;
+  color: var(--color1);
 }
 
 /*end of section-1 css*/
@@ -86,38 +105,44 @@ section h1{
 
 
 
-  footer{
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f6f6f6;
-    color: #BCBCBC;
-  
-  }
-  
-  .event{
-    color: #454545;
-  }
-  
-  .event:hover{
-    color: white;
-  }
-  
-  .list-group-item a{
-    color: #818181;
-  }
-  
-  
-  
-  ul li a{
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #818181;
-   
-  }
+#paragraph{
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: var(--color4);
+}
+
+#paragraph h1{
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+}
 
 
+
+.package-pic{
+  width: 75%;
+}
+
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-top: 10%;
+}
+
+#paragraph ul{
+  background-color: var(--color2);
+}
+
+.content-wedding ul{
+  height:350px;
+    overflow-y: scroll;
+
+  
+}
 
 
 /*css for slide-in scroll*/
@@ -183,7 +208,7 @@ section h1{
 @media (max-width: 1399.98px) { 
   nav{
   padding-bottom: 10px;
-background-color: #ffffff;
+background-color: var(--color1);
 }
 
  }
@@ -192,10 +217,14 @@ background-color: #ffffff;
 
     .main{
      display: grid;
-     grid-auto-rows: minmax(90vh, auto);
+     grid-auto-rows: minmax(70vh, auto);
      margin: 0;
      padding: 0;
  
+   }
+
+   .section-2{
+     margin-top: 10%;
    }
    
 
@@ -205,31 +234,42 @@ background-color: #ffffff;
     height: 75vh;
   }
 
- 
+  #paragraph h1{
+    text-align: center;
+  }
+  
+  #paragraph h5{
+  
+    text-align: center;
+    
+  }
+
 
   }
 
   @media (max-width: 576px) { 
 
-   .main{
-     display: grid;
-     grid-auto-rows: minmax(90vh, auto);
-     margin: 0;
-     padding: 0;
- 
-   }
+    .main{
+      display: grid;
+      grid-auto-rows: minmax(50vh, auto);
+      margin: 0;
+      padding: 0;
+  
+    }
 
+    .wrap-banner{
+      margin: 0;
+      height: 50vh;
+    }
 
-
-   
-   .wrap-banner{
-     margin: 0;
-     height: 70vh;
-   }
-   
+  
 
     .wrap-banner h1{
      font-size: calc(1.525rem + 3.3vw);
+    }
+
+    #paragraph h1{
+      font-size: calc(1.525rem + 3.3vw);
     }
 
 
