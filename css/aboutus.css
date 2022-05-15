@@ -124,7 +124,7 @@ section h1{
 /*end of section-1 css*/
 
 
-#para{
+.paragraph{
   height: 100%;
   display: grid;
   align-items: center;
@@ -133,7 +133,7 @@ section h1{
 
 }
 
-#para h1{
+.paragraph h1{
   font-style: italic;
   font-family: 'Cormorant Garamond', serif;
   font-size: 4rem;
@@ -302,14 +302,13 @@ section h1{
               }
       
 
-      #para{
+      .paragraph{
         width: 100%;
       }
       .pic-home{
         height: 100%;
         width: 100%;
       }
-
  
 
   }
@@ -329,9 +328,7 @@ section h1{
      height: 50vh;
    }
    
-    .section-2 #para{
-      text-align: center;
-    }
+
     .team-pic{
       width: 100%;
     }
@@ -340,15 +337,13 @@ section h1{
       width: 100%;
     }
 
-    .section-4 #para{
-      text-align: center;
-    }
+
 
     .wrap-banner h1{
      font-size: calc(1.525rem + 3.3vw);
     }
 
-    #para h1{
+    .paragraph h1{
       font-size: calc(1.525rem + 3.3vw);
     }
 

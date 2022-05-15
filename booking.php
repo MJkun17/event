@@ -271,7 +271,6 @@ color: #454545;
 nav{
   text-align: center;
 background-color: #ffffff;
-opacity: 0.9;
 }
 
 ul li .nav-link{
@@ -310,12 +309,23 @@ ul li .nav-link{
  
    }
 
-        .custom-toggler-icon span {
-      background: white;
-      }
-      .custom-toggler-icon::after {
-      background: white;
-      }
+   .custom-toggler-icon span {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 2px;
+  background: #454545;
+  margin: 8px 0;
+}
+.custom-toggler-icon::after {
+  content: "";
+  float: left;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #454545;
+}
+
 
       .navbar-brand{
       color: white;
@@ -560,7 +570,7 @@ function validateForm() {
                               }
                           ?></a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" style="color:#454545" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
             <i class="custom-toggler-icon">
               <span></span>
             </i>

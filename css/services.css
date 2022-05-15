@@ -83,7 +83,7 @@ html, body{
 }
 
 
-#paragraph{
+.paragraph{
   height: 100%;
   display: grid;
   align-items: center;
@@ -92,7 +92,7 @@ html, body{
 
 }
 
-#paragraph h1{
+.paragraph h1{
   font-style: italic;
   font-size: 4rem;
 
@@ -262,24 +262,77 @@ section h1{
     margin: 0;
     height: 50vh;
   }
+     
+.section-2 .row{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
 
-  .section-3 .row{
-    flex-direction: column-reverse;
-  }
+}
 
-  .section-5 .row{
-    flex-direction: column-reverse;
-  }
+.section-3 .row{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column-reverse;
 
-  .section-7 .row{
-    flex-direction: column-reverse;
-  }
+}
 
-  #paragraph h1{
+
+.section-4 .row{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+}
+
+
+.section-5 .row{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column-reverse;
+
+}
+
+
+.section-6 .row{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+}
+
+
+.section-7 .row{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column-reverse;
+}
+
+
+.section-8 .row{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+}
+
+
+
+  .paragraph h1{
     text-align: center;
   }
   
-  #paragraph h5{
+  .paragraph h5{
   
     text-align: center;
   }
@@ -308,7 +361,7 @@ section h1{
 
 
     
- #paragraph{
+ .paragraph{
        text-align: center;
      }
      .service-pic{
@@ -317,10 +370,12 @@ section h1{
 
 
  
-     #paragraph h1{
+     .paragraph h1{
        font-size: calc(1.525rem + 3.3vw);
      }
  
-
+.section-9 br{
+  display: none;
+}
     
    }
