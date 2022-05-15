@@ -33,7 +33,7 @@ html, body{
   /* for grid 100vh per section*/
   .main{
     display: grid;
-    grid-auto-rows: minmax(65vh, auto);
+    grid-auto-rows: minmax(90vh, auto);
     margin: 0;
     padding: 0;
 
@@ -324,10 +324,14 @@ blockquote::after {
 }
 
 .pic-home{
-  width: 80%;
+    width: 564px;
+    height: 608px;
+    object-fit: cover;
+
+  
 }
 
-#para{
+#paragraph{
   height: 100%;
   display: grid;
   align-items: center;
@@ -336,16 +340,16 @@ blockquote::after {
 
 }
 
-#para h1{
+#paragraph h1{
   font-style: italic;
   font-family: 'Cormorant Garamond', serif;
 }
 
-#para h5{
+#paragraph h5{
 
   font-family: 'Montserrat', sans-serif;
 }
-#para .text-justify{
+#paragraph .text-justify{
 
   font-family: 'Montserrat', sans-serif;
 }
@@ -427,6 +431,7 @@ blockquote::after {
     justify-content:center;
     align-items:center;
     color: var(--color1);
+    margin-top: 6%;
   }
 
 
@@ -619,7 +624,7 @@ footer{
   
         }
 
-      #para{
+      #paragraph{
         width: 100%;
       }
       .pic-home{

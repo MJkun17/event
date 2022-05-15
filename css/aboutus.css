@@ -13,6 +13,12 @@ html, body{
     --color4: #454545;
     --color5: #202020;
   }
+
+  
+  *{
+    font-family: 'Montserrat', sans-serif;
+  }
+  
   
 
   /* for grid 100vh per section*/
@@ -62,9 +68,7 @@ html, body{
   padding: 0;
 }
 
-h5{
-  font-family: 'Montserrat', sans-serif;
-}
+
 
 h1{
   font-family: 'Cormorant Garamond', serif;
@@ -135,21 +139,19 @@ section h1{
   font-size: 4rem;
 }
 
-#para h5{
 
-  font-family: 'Montserrat', sans-serif;
-}
-#para .text-justify{
 
-  font-family: 'Montserrat', sans-serif;
-}
 
 .team-pic{
-  width: 75%;
+  width: 486px;
+  height: 438px;
+  object-fit: cover;
 }
 
 .team-story{
-  width: 75%;
+  width: 486px;
+  height: 438px;
+  object-fit: cover;
 
 }
 
@@ -173,7 +175,17 @@ section h1{
     align-items:center;
     color: var(--color1);
   }
+.member{
+  width: 276px;
+  height: 425px;
+  object-fit: cover;
+}
 
+.partners{
+  width: 272px;
+  height: 272px;
+  object-fit: cover;
+}
 
 /*end of section-3 css*/
 

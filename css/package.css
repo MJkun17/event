@@ -122,7 +122,9 @@ section h1{
 
 
 .package-pic{
-  width: 75%;
+  width: 536px;
+  height: 526px;
+  object-fit: cover;
 }
 
 
@@ -246,6 +248,8 @@ background-color: var(--color1);
 
 
   }
+
+
 
   @media (max-width: 576px) { 
 
