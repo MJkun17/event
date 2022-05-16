@@ -327,16 +327,6 @@ section h1{
 }
 
 
-
-  .paragraph h1{
-    text-align: center;
-  }
-  
-  .paragraph h5{
-  
-    text-align: center;
-  }
-
  
 
   }
@@ -351,19 +341,12 @@ section h1{
   
     }
  
- 
-
 
 
     .wrap-banner h1{
      font-size: calc(1.525rem + 3.3vw);
     }
 
-
-    
- .paragraph{
-       text-align: center;
-     }
      .service-pic{
        width: 100%;
      }
