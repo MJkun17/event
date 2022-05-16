@@ -76,6 +76,10 @@ h1{
   color: var(--color4);
 }
 
+h5{
+  color: var(--color5);
+}
+
 
 #myBtn{
   display: none;

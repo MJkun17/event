@@ -721,7 +721,7 @@ function validateForm() {
 
 <div class="container-fluid p-0 m-0">
   <!-- Footer -->
-  <footer class="text-lg-start text-dark text-md-center" style="background-color: #ECEFF1">
+  <footer class="text-lg-start text-dark text-md-center" style="background-color: #f6f6f6">
 
 
     <!-- Section: Links  -->

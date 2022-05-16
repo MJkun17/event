@@ -8,6 +8,7 @@ html, body{
 
   h5{
     font-family: 'Montserrat', sans-serif;
+    color: var(--color5);
   }
   
   h1{
@@ -19,6 +20,7 @@ html, body{
   h3{
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
+    color: var(--color4);
   }
 
   :root {
@@ -338,6 +340,12 @@ blockquote::after {
     object-fit: cover;
 
   
+}
+
+.elmer{
+  width: 437px;
+  height: 555px;
+  object-fit: cover;
 }
 
 .paragraph{
