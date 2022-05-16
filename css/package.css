@@ -74,7 +74,7 @@ h1{
   background-color: 	#454545;
 }
 
-#myBtn img:hover{
+#myBtn:hover img{
   -webkit-filter: grayscale(5) invert(1);
   filter: grayscale(5) invert(1);
 }

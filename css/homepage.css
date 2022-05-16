@@ -139,7 +139,7 @@ html, body{
   background-color: 	var(--color4);
 }
 
-#myBtn img:hover{
+#myBtn:hover img{
   -webkit-filter: grayscale(5) invert(1);
   filter: grayscale(5) invert(1);
 }
