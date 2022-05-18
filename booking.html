@@ -7,7 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <title>Document</title>
- <link rel="stylesheet" href="css\booking.css">
+ <link rel="stylesheet" href=".\css\booking.css">
+ 
 <!-- for date picker-->
 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
@@ -164,10 +165,9 @@ function validateForm() {
   <header  id="nav-placeholder"></header>
 
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  
   <script>
   $(function(){
-    $("#nav-placeholder").load("/nav&footer/nav.html");
+    $("#nav-placeholder").load("./nav&footer/nav.html");
   });
   </script>
 
@@ -274,100 +274,14 @@ function validateForm() {
 
 <!--end of main-->
 
-<div class="container-fluid p-0 m-0">
-  <!-- Footer -->
-  <footer class="text-lg-start text-dark text-md-center" style="background-color: #f6f6f6">
+<footer  id="footer-placeholder"></footer>
 
-
-    <!-- Section: Links  -->
-    <section class="pt-1">
-      <div class="container  text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold">E-event</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px;  height: 2px"
-                />
-            <p>
-              Our ceremony styling  knows no boundaries Like the elegance of simplicity of this ceremony set-up. 
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Social Media</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px;  height: 2px;"
-                />
-            <p>
-              <a href="https://www.facebook.com/eevents30" class="text-dark text-decoration-none">Facebook</a>
-            </p>
-            <p>
-              <a href="https://www.tiktok.com/@itsmeelmer33" class="text-dark text-decoration-none">Tiktok</a>
-            </p>
-        
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">PARTNERS</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; height: 2px"
-                />
-            <p>
-              <a href="#!" class="text-dark text-decoration-none">InMotion Studio</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark text-decoration-none">Don Aloysius Atelier</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark text-decoration-none">Biancrafts</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contact</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px;  height: 2px"
-                />
-            <p><i class="fas fa-home mr-3"></i>Pan-Philippine Hwy, Daet, Camarines Norte</p>
-            <p><i class="fas fa-envelope mr-3"></i> cool_djluis@yahoo.com</p>
-            <p><i class="fas fa-phone mr-3"></i>0908 102 8011</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: #E3E3E3"
-         >
-         © 2022 E-EVENTS, ALL RIGHTS RESERVED
-
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-</div>
-<!-- End of .container -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+  $("#footer-placeholder").load("./nav&footer/footer.html");
+});
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

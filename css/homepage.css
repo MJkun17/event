@@ -205,10 +205,10 @@ ul li .nav-link{
 }
 
 .cc1{
-background-image: url('assets\carousel.jpg');
+background-image: url('../assets/carousel.jpg');
 }
 .cc2{
-background-image: url('assets\carousel1.jpg');
+background-image: url('../assets/carousel1.jpg');
 }
 
 
@@ -436,7 +436,7 @@ blockquote::after {
 
 /*section-7*/
   .parallax{
-    background-image: url('assets\parallaxhomepage.jpg');
+    background-image: url('../assets/parallaxhomepage.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;

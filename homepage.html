@@ -5,27 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css\homepage.css">
+    <link rel="stylesheet" href=".\css\homepage.css">
   
   <title>Document</title>
 
   </head>
   <body>
+    
+    <header  id="nav-placeholder"></header>
 
-
-      
-  <header  id="nav-placeholder"></header>
-
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script>
-  $(function(){
-    $("#nav-placeholder").load("/nav&footer/navhome.html");
-  });
-  </script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("./nav&footer/navhome.html");
+    });
+    </script>
 
     <div class="main">  
       <div class="section-1">
-        <button   onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets\arrow-t.png" style="height: 20px; width: 20px;"  alt=""></button>        
+        <button   onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets\arrow-t.png"  style="height: 20px; width: 20px;" alt=""></button>
               
                   <div class="carousel slide carousel-fade p-0 m-0 carouselExampleInterval" data-bs-ride="carousel" >
                                   
@@ -396,7 +394,7 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>
 $(function(){
-  $("#footer-placeholder").load("/nav&footer/footer.html");
+  $("#footer-placeholder").load("./nav&footer/footer.html");
 });
 </script>
 
@@ -408,5 +406,5 @@ $(function(){
 </body>
 
 
-<script src="/js-file/js-code.js"></script>
+<script src="./js-file/js-code.js"></script>
 </html>
