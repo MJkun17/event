@@ -65,4 +65,18 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => { 
   handleScrollAnimation();
 });
-    
+   
+
+//video auto stop when other video is playing
+$(document).ready(function () {
+    function playFile() {
+        $(".player").not(this).each(function () {
+            $(this).get(0).pause();
+        });
+        this[this.get(0).paused ? "play" : "pause"]();
+    }
+
+    $('.player').on("click play", function() {
+        playFile.call(this);
+    });
+})

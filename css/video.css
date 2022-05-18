@@ -65,7 +65,7 @@ h1{
   display:flex;
   justify-content:center;
   align-items:center;
- background:url('/assets/aboutus/about.jpg');
+ background:url('../assets/about.jpg');
  background-size:cover;
   background-position:center;
   box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 42%);
@@ -84,39 +84,11 @@ section h1{
 
 
 
-
-  footer{
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f6f6f6;
-    color: #BCBCBC;
-  
-  }
-  
-  .event{
-    color: #454545;
-  }
-  
-  .event:hover{
-    color: white;
-  }
-  
-  .list-group-item a{
-    color: #818181;
-  }
-  
-  
-  
-  ul li a{
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #818181;
-   
-  }
-
-
+video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 
 /*css for slide-in scroll*/
