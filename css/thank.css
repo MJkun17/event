@@ -45,32 +45,6 @@ h1{
 
 
 
-#myBtn{
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: 	var(--color3);
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-
-#myBtn:hover{
-  background-color: 	var(--color4);
-}
-
-#myBtn:hover img{
-  -webkit-filter: grayscale(5) invert(1);
-  filter: grayscale(5) invert(1);
-}
-
-
 .wrap{
   display:flex;
   justify-content:center;
@@ -86,7 +60,6 @@ section h1{
   font-size: 5rem;
 
 }
-
 
 
 
@@ -111,64 +84,6 @@ section h1{
 
 /*end of section-1 css*/
 
-
-/*css for slide-in scroll*/
- 
-.scroll-container{
-  overflow: hidden;
-}
-    .scroll-element{
-      width: 100%;
-     
-    }
-
-    /**Styling scrollable elements*/
-    
-    .js-scroll {
-      opacity: 0;
-      transition: opacity 500ms;
-    }
-    
-    .js-scroll.scrolled {
-      opacity: 1;
-    }
-    
-
-    
-    .scrolled.slide-left {
-      animation: slide-in-left 1s ease-in-out both;
-    }
-    
-    .scrolled.slide-right {
-      animation: slide-in-right 1s ease-in-out both;
-    }
-
-    
-    @keyframes slide-in-left {
-      0% {
-        -webkit-transform: translateX(-100px);
-        transform: translateX(-100px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    
-    @keyframes slide-in-right {
-      0% {
-        -webkit-transform: translateX(100px);
-        transform: translateX(100px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
     
 
 /*start of media qurery*/
