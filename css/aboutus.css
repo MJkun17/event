@@ -110,7 +110,7 @@ h5{
   display:flex;
   justify-content:center;
   align-items:center;
- background:url('/assets/aboutus/about.jpg');
+ background:url('../assets/about.jpg');
  background-size:cover;
   background-position:center;
   box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 42%);
@@ -169,7 +169,7 @@ section h1{
 /*end of section-2&4 css*/
 
   .parallax{
-    background-image: url('/assets/aboutus/parallaxaboutus.jpg');
+    background-image: url("../assets/parallaxaboutus.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
