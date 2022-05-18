@@ -2030,3 +2030,121 @@ opacity: 0.6;
  }
 
 
+/*end of aboutus*/
+
+.main-thank{
+  display: grid;
+  grid-auto-rows: minmax( 70vh, auto);
+  margin: 0;
+  padding: 0;
+
+}
+
+.section-thank-1 {
+  grid-row: 1/2;
+}
+
+
+h5{
+font-family: 'Montserrat', sans-serif;
+color: var(--color4);
+}
+
+
+
+
+.wrap-thank{
+display:flex;
+justify-content:center;
+align-items:center;
+background-color: var(--color1);
+height: 60vh;
+margin-top: 6%;
+}
+
+section h1{
+font-family: 'Cormorant Garamond', serif;
+font-style: italic;
+font-size: 5rem;
+
+}
+
+.section-thank-1 h1{
+  color: var(--color4);
+}
+
+
+
+.btn {
+
+  border: solid var(--color4) 2px;
+  color: var(--color4);
+  padding: 10px 43px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+  background-color: var(--color1);
+}
+
+
+/*end of section-1 css*/
+
+  
+
+/*start of media qurery*/
+
+@media (max-width: 991.98px) { 
+
+  .main-thank{
+   display: grid;
+   grid-auto-rows: minmax(90vh, auto);
+   margin: 0;
+   padding: 0;
+
+ }
+ 
+
+.wrap-banner-thank{
+  margin: 0;
+  height: 75vh;
+}
+
+
+
+}
+
+@media (max-width: 576px) { 
+
+ .main-thank{
+   display: grid;
+   grid-auto-rows: minmax(90vh, auto);
+   margin: 0;
+   padding: 0;
+
+ }
+
+.section-thank-1{
+height: 100vh;
+}
+
+ 
+ .wrap-banner-thank{
+   margin: 0;
+   height: 100vh;
+ }
+ 
+
+  .wrap-banner-thank h1{
+   font-size: calc(1.525rem + 3.3vw);
+  }
+
+
+  
+ }
