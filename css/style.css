@@ -2075,7 +2075,7 @@ font-size: 5rem;
 
 
 
-.btn {
+.btn-ty {
 
   border: solid var(--color4) 2px;
   color: var(--color4);
@@ -2089,7 +2089,7 @@ font-size: 5rem;
   font-family: 'Montserrat', sans-serif;
 }
 
-.btn:hover {
+.btn-ty:hover {
   background-color: var(--color1);
 }
 
