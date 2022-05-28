@@ -154,10 +154,10 @@ html, body{
 }
 
 .cc1{
-background-image: url('../assets/carousel.jpg');
+background-image: url('../assets/carousel1.jpg');
 }
 .cc2{
-background-image: url('../assets/carousel1.jpg');
+background-image: url('../assets/carousel.jpg');
 }
 
 
@@ -217,32 +217,9 @@ background-image: url('../assets/carousel1.jpg');
 /*section-2 css*/
 .section-home-2 h1{
   font-size: 4rem;
-  color: var(--color4);
+  color: var(--color1);
 }
 
-blockquote {
-
-  position: relative;
-  top: -150px;
-}
-
-
-blockquote::after {
-  content: "";
-  top: 50%;
-  left: 50%;
-  margin-left: -100px;
-  position: absolute;
-  content: "\201c";
-  font-size: 200px;
-  color: var(--color3);
-  width: 200px;
-  font-family: 'Cormorant Garamond', serif;
-}
-
-.section-home-2 .text-center{
-  margin-top: 10%;
-}
 
 /*for section-3,4,5,&8*/
 
@@ -401,8 +378,34 @@ blockquote::after {
     color: var(--color1);
     margin-top: 6%;
   }
+  .parallax-home h1{
+    color: #F6F6F6;
+  }
 
+  blockquote {
 
+    position: relative;
+    top: -150px;
+  }
+  
+  
+  blockquote::after {
+    content: "";
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    content: "\201c";
+    font-size: 200px;
+    color: var(--color1);
+    width: 200px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .subname h5{
+    color: #F6F6F6;
+  }
+  
 /*footer*/
 
 footer{
@@ -790,6 +793,11 @@ footer{
   
 
     }
+
+
+ 
+
+
 
 /*end of homepage*/
 
@@ -1293,7 +1301,9 @@ section h1{
     object-fit: cover;
   }
   
-  
+  #tiktok video{
+    height: 230px;
+  }
 
   
   /*start of media qurery*/
